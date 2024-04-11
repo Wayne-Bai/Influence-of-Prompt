@@ -1,1 +1,2 @@
 # Influence-of-Prompt
+This repo contains the source code for *Exploring the Influence of Prompts in LLMs for Security-Related Tasks* [Paper](https://www.ndss-symposium.org/wp-content/uploads/aiscc2024-15-paper.pdf)
