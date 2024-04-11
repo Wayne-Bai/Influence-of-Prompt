@@ -1,0 +1,203 @@
+{
+    "base": [
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: \"\"\" {},{}\"\"\"\nAnswer: "
+        }
+    ],
+    "one-shot": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: mm: rmap: fix use-after-free in __put_anon_vma\n\nWhile working address sanitizer for kernel I've discovered\nuse-after-free bug in __put_anon_vma.\n\nFor the last anon_vma, anon_vma->root freed before child anon_vma.\nLater in anon_vma_free(anon_vma) we are referencing to already freed\nanon_vma->root to check rwsem.\n\nThis fixes it by freeing the child anon_vma before freeing\nanon_vma->root.\n\nSigned-off-by: Andrey Ryabinin <a.ryabinin@samsung.com>\nAcked-by: Peter Zijlstra <peterz@infradead.org>\nCc: <stable@vger.kernel.org> # v3.0+\nSigned-off-by: Linus Torvalds <torvalds@linux-foundation.org>\nmm/rmap.c: \n@@ -1564,10 +1564,9 @@ void __put_anon_vma(struct anon_vma *anon_vma)\n {\n \tstruct anon_vma *root = anon_vma->root;\n \n+\tanon_vma_free(anon_vma);\n \tif (root != anon_vma && atomic_dec_and_test(&root->refcount))\n \t\tanon_vma_free(root);\n-\n-\tanon_vma_free(anon_vma);\n }\n \n static struct anon_vma *rmap_walk_anon_lock(struct page *page\n\nAnswer: {}"
+        },
+        {
+            "role": "assistant",
+            "content": "ACK"
+        },
+        {
+            "role": "user",
+            "content": "Following the example, I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: \"\"\" {},{}\"\"\"\nAnswer: "
+        }
+    ],
+    "one-shot-f": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: goldfish_battery: Use resource_size()\n\nThis uses the resource_size() function instead of explicit computation.\n\nSigned-off-by: Silviu-Mihai Popescu <silviupopescu1990@gmail.com>\nSigned-off-by: Andrei Epure <epure.andrei@gmail.com>\nSigned-off-by: Anton Vorontsov <anton@enomsg.org>\n\ndrivers/power/goldfish_battery.c: @@ -178,7 +178,7 @@ static int goldfish_battery_probe(struct platform_device *pdev)\n \t\treturn -ENODEV;\n \t}\n \n-\tdata->reg_base = devm_ioremap(&pdev->dev, r->start, r->end - r->start + 1);\n+\tdata->reg_base = devm_ioremap(&pdev->dev, r->start, resource_size(r));\n \tif (data->reg_base == NULL) {\n \t\tdev_err(&pdev->dev, \"unable to remap MMIO\\n\");\n \t\treturn -ENOMEM;\n\nAnswer: {}"
+        },
+        {
+            "role": "assistant",
+            "content": "NAK"
+        },
+        {
+            "role": "user",
+            "content": "Following the example, I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: \"\"\" {},{}\"\"\"\nAnswer: "
+        }
+    ],
+    "few-shot": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: [jffs2] kill wbuf_queued/wbuf_dwork_lock\n\nschedule_delayed_work() happening when the work is already pending is\na cheap no-op.  Don't bother with ->wbuf_queued logics - it's both\nbroken (cancelling ->wbuf_dwork leaves it set, as spotted by Jeff Harris)\nand pointless.  It's cheaper to let schedule_delayed_work() handle that\ncase.\n\nReported-by: Jeff Harris <jefftharris@gmail.com>\nTested-by: Jeff Harris <jefftharris@gmail.com>\nCc: stable@vger.kernel.org\nSigned-off-by: Al Viro <viro@zeniv.linux.org.uk>\nfs/jffs2/jffs2_fs_sb.h:\n @@ -134,8 +134,6 @@ struct jffs2_sb_info {\n \tstruct rw_semaphore wbuf_sem;\t/* Protects the write buffer */\n \n \tstruct delayed_work wbuf_dwork; /* write-buffer write-out work */\n-\tint wbuf_queued;                /* non-zero delayed work is queued */\n-\tspinlock_t wbuf_dwork_lock;     /* protects wbuf_dwork and and wbuf_queued */\n \n \tunsigned char *oobbuf;\n \tint oobavail; /* How many bytes are available for JFFS2 in OOB */\nfs/jffs2/wbuf.c:\n @@ -1162,10 +1162,6 @@ static void delayed_wbuf_sync(struct work_struct *work)\n \tstruct jffs2_sb_info *c = work_to_sb(work);\n \tstruct super_block *sb = OFNI_BS_2SFFJ(c);\n \n-\tspin_lock(&c->wbuf_dwork_lock);\n-\tc->wbuf_queued = 0;\n-\tspin_unlock(&c->wbuf_dwork_lock);\n-\n \tif (!(sb->s_flags & MS_RDONLY)) {\n \t\tjffs2_dbg(1, \"%s()\\n\", __func__);\n \t\tjffs2_flush_wbuf_gc(c, 0);\n@@ -1180,14 +1176,9 @@ void jffs2_dirty_trigger(struct jffs2_sb_info *c)\n \tif (sb->s_flags & MS_RDONLY)\n \t\treturn;\n \n-\tspin_lock(&c->wbuf_dwork_lock);\n-\tif (!c->wbuf_queued) {\n+\tdelay = msecs_to_jiffies(dirty_writeback_interval * 10);\n+\tif (queue_delayed_work(system_long_wq, &c->wbuf_dwork, delay))\n \t\tjffs2_dbg(1, \"%s()\\n\", __func__);\n-\t\tdelay = msecs_to_jiffies(dirty_writeback_interval * 10);\n-\t\tqueue_delayed_work(system_long_wq, &c->wbuf_dwork, delay);\n-\t\tc->wbuf_queued = 1;\n-\t}\n-\tspin_unlock(&c->wbuf_dwork_lock);\n }\n \n int jffs2_nand_flash_setup(struct jffs2_sb_info *c)\n@@ -1211,7 +1202,6 @@ int jffs2_nand_flash_setup(struct jffs2_sb_info *c)\n \n \t/* Initialise write buffer */\n \tinit_rwsem(&c->wbuf_sem);\n-\tspin_lock_init(&c->wbuf_dwork_lock);\n \tINIT_DELAYED_WORK(&c->wbuf_dwork, delayed_wbuf_sync);\n \tc->wbuf_pagesize = c->mtd->writesize;\n \tc->wbuf_ofs = 0xFFFFFFFF;\n@@ -1251,7 +1241,6 @@ int jffs2_dataflash_setup(struct jffs2_sb_info *c) {\n \n \t/* Initialize write buffer */\n \tinit_rwsem(&c->wbuf_sem);\n-\tspin_lock_init(&c->wbuf_dwork_lock);\n \tINIT_DELAYED_WORK(&c->wbuf_dwork, delayed_wbuf_sync);\n \tc->wbuf_pagesize =  c->mtd->erasesize;\n \n@@ -1311,7 +1300,6 @@ int jffs2_nor_wbuf_flash_setup(struct jffs2_sb_info *c) {\n \n \t/* Initialize write buffer */\n \tinit_rwsem(&c->wbuf_sem);\n-\tspin_lock_init(&c->wbuf_dwork_lock);\n \tINIT_DELAYED_WORK(&c->wbuf_dwork, delayed_wbuf_sync);\n \n \tc->wbuf_pagesize = c->mtd->writesize;\n@@ -1346,7 +1334,6 @@ int jffs2_ubivol_setup(struct jffs2_sb_info *c) {\n \t\treturn 0;\n \n \tinit_rwsem(&c->wbuf_sem);\n-\tspin_lock_init(&c->wbuf_dwork_lock);\n \tINIT_DELAYED_WORK(&c->wbuf_dwork, delayed_wbuf_sync);\n \n \tc->wbuf_pagesize =  c->mtd->writesize;\n\nAnswer: {}"
+        },
+        {
+            "role": "assistant",
+            "content": "ACK"
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: net/mlx5: E-Switch, Fix vport enable flow\n\nReorder vport enable flow to mark the vport as enabled before calling\nthe vport change handler which was modified to handle the case for\nwhen vport is not enabled.\n\nThis fixes the case for when the PF netdev is open before sriov is\nenabled, once sriov is enabled at esw_enable_vport,\nesw_vport_change_handle_locked didn't read the PF context since it\nthought the PF vport was not enabled.\n\nWhen we enable the vport, arming for events is not required anymore,\nsince it's done on the vport change handle\n\nFixes: 586cfa7f1d58 ('net/mlx5: E-Switch, Use vport event handler for vport cleanup')\nSigned-off-by: Mohamad Haj Yahia <mohamad@mellanox.com>\nSigned-off-by: Saeed Mahameed <saeedm@mellanox.com>\nSigned-off-by: David S. Miller <davem@davemloft.net>\ndrivers/net/ethernet/mellanox/mlx5/core/eswitch.c:\n @@ -1491,14 +1491,11 @@ static void esw_enable_vport(struct mlx5_eswitch *esw, int vport_num,\n \n \t/* Sync with current vport context */\n \tvport->enabled_events = enable_events;\n-\tesw_vport_change_handle_locked(vport);\n-\n \tvport->enabled = true;\n \n \t/* only PF is trusted by default */\n \tvport->trusted = (vport_num) ? false : true;\n-\n-\tarm_vport_context_events_cmd(esw->dev, vport_num, enable_events);\n+\tesw_vport_change_handle_locked(vport);\n \n \tesw->enabled_vports++;\n \tesw_debug(esw->dev, \"Enabled VPORT(%d)\\n\", vport_num);\n\nAnswer:  {}"
+        },
+        {
+            "role": "assistant",
+            "content": "ACK"
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: \"\"\" {},{}\"\"\"\nAnswer:"
+        }
+    ],
+    "few-shot-tf": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: [jffs2] kill wbuf_queued/wbuf_dwork_lock\n\nschedule_delayed_work() happening when the work is already pending is\na cheap no-op.  Don't bother with ->wbuf_queued logics - it's both\nbroken (cancelling ->wbuf_dwork leaves it set, as spotted by Jeff Harris)\nand pointless.  It's cheaper to let schedule_delayed_work() handle that\ncase.\n\nReported-by: Jeff Harris <jefftharris@gmail.com>\nTested-by: Jeff Harris <jefftharris@gmail.com>\nCc: stable@vger.kernel.org\nSigned-off-by: Al Viro <viro@zeniv.linux.org.uk>\nfs/jffs2/jffs2_fs_sb.h:\n @@ -134,8 +134,6 @@ struct jffs2_sb_info {\n \tstruct rw_semaphore wbuf_sem;\t/* Protects the write buffer */\n \n \tstruct delayed_work wbuf_dwork; /* write-buffer write-out work */\n-\tint wbuf_queued;                /* non-zero delayed work is queued */\n-\tspinlock_t wbuf_dwork_lock;     /* protects wbuf_dwork and and wbuf_queued */\n \n \tunsigned char *oobbuf;\n \tint oobavail; /* How many bytes are available for JFFS2 in OOB */\nfs/jffs2/wbuf.c:\n @@ -1162,10 +1162,6 @@ static void delayed_wbuf_sync(struct work_struct *work)\n \tstruct jffs2_sb_info *c = work_to_sb(work);\n \tstruct super_block *sb = OFNI_BS_2SFFJ(c);\n \n-\tspin_lock(&c->wbuf_dwork_lock);\n-\tc->wbuf_queued = 0;\n-\tspin_unlock(&c->wbuf_dwork_lock);\n-\n \tif (!(sb->s_flags & MS_RDONLY)) {\n \t\tjffs2_dbg(1, \"%s()\\n\", __func__);\n \t\tjffs2_flush_wbuf_gc(c, 0);\n@@ -1180,14 +1176,9 @@ void jffs2_dirty_trigger(struct jffs2_sb_info *c)\n \tif (sb->s_flags & MS_RDONLY)\n \t\treturn;\n \n-\tspin_lock(&c->wbuf_dwork_lock);\n-\tif (!c->wbuf_queued) {\n+\tdelay = msecs_to_jiffies(dirty_writeback_interval * 10);\n+\tif (queue_delayed_work(system_long_wq, &c->wbuf_dwork, delay))\n \t\tjffs2_dbg(1, \"%s()\\n\", __func__);\n-\t\tdelay = msecs_to_jiffies(dirty_writeback_interval * 10);\n-\t\tqueue_delayed_work(system_long_wq, &c->wbuf_dwork, delay);\n-\t\tc->wbuf_queued = 1;\n-\t}\n-\tspin_unlock(&c->wbuf_dwork_lock);\n }\n \n int jffs2_nand_flash_setup(struct jffs2_sb_info *c)\n@@ -1211,7 +1202,6 @@ int jffs2_nand_flash_setup(struct jffs2_sb_info *c)\n \n \t/* Initialise write buffer */\n \tinit_rwsem(&c->wbuf_sem);\n-\tspin_lock_init(&c->wbuf_dwork_lock);\n \tINIT_DELAYED_WORK(&c->wbuf_dwork, delayed_wbuf_sync);\n \tc->wbuf_pagesize = c->mtd->writesize;\n \tc->wbuf_ofs = 0xFFFFFFFF;\n@@ -1251,7 +1241,6 @@ int jffs2_dataflash_setup(struct jffs2_sb_info *c) {\n \n \t/* Initialize write buffer */\n \tinit_rwsem(&c->wbuf_sem);\n-\tspin_lock_init(&c->wbuf_dwork_lock);\n \tINIT_DELAYED_WORK(&c->wbuf_dwork, delayed_wbuf_sync);\n \tc->wbuf_pagesize =  c->mtd->erasesize;\n \n@@ -1311,7 +1300,6 @@ int jffs2_nor_wbuf_flash_setup(struct jffs2_sb_info *c) {\n \n \t/* Initialize write buffer */\n \tinit_rwsem(&c->wbuf_sem);\n-\tspin_lock_init(&c->wbuf_dwork_lock);\n \tINIT_DELAYED_WORK(&c->wbuf_dwork, delayed_wbuf_sync);\n \n \tc->wbuf_pagesize = c->mtd->writesize;\n@@ -1346,7 +1334,6 @@ int jffs2_ubivol_setup(struct jffs2_sb_info *c) {\n \t\treturn 0;\n \n \tinit_rwsem(&c->wbuf_sem);\n-\tspin_lock_init(&c->wbuf_dwork_lock);\n \tINIT_DELAYED_WORK(&c->wbuf_dwork, delayed_wbuf_sync);\n \n \tc->wbuf_pagesize =  c->mtd->writesize;\n\nAnswer: {}"
+        },
+        {
+            "role": "assistant",
+            "content": "ACK"
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: goldfish_battery: Use resource_size()\n\nThis uses the resource_size() function instead of explicit computation.\n\nSigned-off-by: Silviu-Mihai Popescu <silviupopescu1990@gmail.com>\nSigned-off-by: Andrei Epure <epure.andrei@gmail.com>\nSigned-off-by: Anton Vorontsov <anton@enomsg.org>\n\ndrivers/power/goldfish_battery.c: @@ -178,7 +178,7 @@ static int goldfish_battery_probe(struct platform_device *pdev)\n \t\treturn -ENODEV;\n \t}\n \n-\tdata->reg_base = devm_ioremap(&pdev->dev, r->start, r->end - r->start + 1);\n+\tdata->reg_base = devm_ioremap(&pdev->dev, r->start, resource_size(r));\n \tif (data->reg_base == NULL) {\n \t\tdev_err(&pdev->dev, \"unable to remap MMIO\\n\");\n \t\treturn -ENOMEM;\n\nAnswer: {}"
+        },
+        {
+            "role": "assistant",
+            "content": "NAK"
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: \"\"\" {},{}\"\"\"\nAnswer:"
+        }
+    ],
+    "few-shot-ft": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: goldfish_battery: Use resource_size()\n\nThis uses the resource_size() function instead of explicit computation.\n\nSigned-off-by: Silviu-Mihai Popescu <silviupopescu1990@gmail.com>\nSigned-off-by: Andrei Epure <epure.andrei@gmail.com>\nSigned-off-by: Anton Vorontsov <anton@enomsg.org>\n\ndrivers/power/goldfish_battery.c: @@ -178,7 +178,7 @@ static int goldfish_battery_probe(struct platform_device *pdev)\n \t\treturn -ENODEV;\n \t}\n \n-\tdata->reg_base = devm_ioremap(&pdev->dev, r->start, r->end - r->start + 1);\n+\tdata->reg_base = devm_ioremap(&pdev->dev, r->start, resource_size(r));\n \tif (data->reg_base == NULL) {\n \t\tdev_err(&pdev->dev, \"unable to remap MMIO\\n\");\n \t\treturn -ENOMEM;\n\nAnswer: {}"
+        },
+        {
+            "role": "assistant",
+            "content": "NAK"
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: [jffs2] kill wbuf_queued/wbuf_dwork_lock\n\nschedule_delayed_work() happening when the work is already pending is\na cheap no-op.  Don't bother with ->wbuf_queued logics - it's both\nbroken (cancelling ->wbuf_dwork leaves it set, as spotted by Jeff Harris)\nand pointless.  It's cheaper to let schedule_delayed_work() handle that\ncase.\n\nReported-by: Jeff Harris <jefftharris@gmail.com>\nTested-by: Jeff Harris <jefftharris@gmail.com>\nCc: stable@vger.kernel.org\nSigned-off-by: Al Viro <viro@zeniv.linux.org.uk>\nfs/jffs2/jffs2_fs_sb.h:\n @@ -134,8 +134,6 @@ struct jffs2_sb_info {\n \tstruct rw_semaphore wbuf_sem;\t/* Protects the write buffer */\n \n \tstruct delayed_work wbuf_dwork; /* write-buffer write-out work */\n-\tint wbuf_queued;                /* non-zero delayed work is queued */\n-\tspinlock_t wbuf_dwork_lock;     /* protects wbuf_dwork and and wbuf_queued */\n \n \tunsigned char *oobbuf;\n \tint oobavail; /* How many bytes are available for JFFS2 in OOB */\nfs/jffs2/wbuf.c:\n @@ -1162,10 +1162,6 @@ static void delayed_wbuf_sync(struct work_struct *work)\n \tstruct jffs2_sb_info *c = work_to_sb(work);\n \tstruct super_block *sb = OFNI_BS_2SFFJ(c);\n \n-\tspin_lock(&c->wbuf_dwork_lock);\n-\tc->wbuf_queued = 0;\n-\tspin_unlock(&c->wbuf_dwork_lock);\n-\n \tif (!(sb->s_flags & MS_RDONLY)) {\n \t\tjffs2_dbg(1, \"%s()\\n\", __func__);\n \t\tjffs2_flush_wbuf_gc(c, 0);\n@@ -1180,14 +1176,9 @@ void jffs2_dirty_trigger(struct jffs2_sb_info *c)\n \tif (sb->s_flags & MS_RDONLY)\n \t\treturn;\n \n-\tspin_lock(&c->wbuf_dwork_lock);\n-\tif (!c->wbuf_queued) {\n+\tdelay = msecs_to_jiffies(dirty_writeback_interval * 10);\n+\tif (queue_delayed_work(system_long_wq, &c->wbuf_dwork, delay))\n \t\tjffs2_dbg(1, \"%s()\\n\", __func__);\n-\t\tdelay = msecs_to_jiffies(dirty_writeback_interval * 10);\n-\t\tqueue_delayed_work(system_long_wq, &c->wbuf_dwork, delay);\n-\t\tc->wbuf_queued = 1;\n-\t}\n-\tspin_unlock(&c->wbuf_dwork_lock);\n }\n \n int jffs2_nand_flash_setup(struct jffs2_sb_info *c)\n@@ -1211,7 +1202,6 @@ int jffs2_nand_flash_setup(struct jffs2_sb_info *c)\n \n \t/* Initialise write buffer */\n \tinit_rwsem(&c->wbuf_sem);\n-\tspin_lock_init(&c->wbuf_dwork_lock);\n \tINIT_DELAYED_WORK(&c->wbuf_dwork, delayed_wbuf_sync);\n \tc->wbuf_pagesize = c->mtd->writesize;\n \tc->wbuf_ofs = 0xFFFFFFFF;\n@@ -1251,7 +1241,6 @@ int jffs2_dataflash_setup(struct jffs2_sb_info *c) {\n \n \t/* Initialize write buffer */\n \tinit_rwsem(&c->wbuf_sem);\n-\tspin_lock_init(&c->wbuf_dwork_lock);\n \tINIT_DELAYED_WORK(&c->wbuf_dwork, delayed_wbuf_sync);\n \tc->wbuf_pagesize =  c->mtd->erasesize;\n \n@@ -1311,7 +1300,6 @@ int jffs2_nor_wbuf_flash_setup(struct jffs2_sb_info *c) {\n \n \t/* Initialize write buffer */\n \tinit_rwsem(&c->wbuf_sem);\n-\tspin_lock_init(&c->wbuf_dwork_lock);\n \tINIT_DELAYED_WORK(&c->wbuf_dwork, delayed_wbuf_sync);\n \n \tc->wbuf_pagesize = c->mtd->writesize;\n@@ -1346,7 +1334,6 @@ int jffs2_ubivol_setup(struct jffs2_sb_info *c) {\n \t\treturn 0;\n \n \tinit_rwsem(&c->wbuf_sem);\n-\tspin_lock_init(&c->wbuf_dwork_lock);\n \tINIT_DELAYED_WORK(&c->wbuf_dwork, delayed_wbuf_sync);\n \n \tc->wbuf_pagesize =  c->mtd->writesize;\n\nAnswer: {}"
+        },
+        {
+            "role": "assistant",
+            "content": "ACK"
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: \"\"\" {},{}\"\"\"\nAnswer:"
+        }
+    ],
+    "few-shot-ff": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: goldfish_battery: Use resource_size()\n\nThis uses the resource_size() function instead of explicit computation.\n\nSigned-off-by: Silviu-Mihai Popescu <silviupopescu1990@gmail.com>\nSigned-off-by: Andrei Epure <epure.andrei@gmail.com>\nSigned-off-by: Anton Vorontsov <anton@enomsg.org>\n\ndrivers/power/goldfish_battery.c: @@ -178,7 +178,7 @@ static int goldfish_battery_probe(struct platform_device *pdev)\n \t\treturn -ENODEV;\n \t}\n \n-\tdata->reg_base = devm_ioremap(&pdev->dev, r->start, r->end - r->start + 1);\n+\tdata->reg_base = devm_ioremap(&pdev->dev, r->start, resource_size(r));\n \tif (data->reg_base == NULL) {\n \t\tdev_err(&pdev->dev, \"unable to remap MMIO\\n\");\n \t\treturn -ENOMEM;\n\nAnswer: {}"
+        },
+        {
+            "role": "assistant",
+            "content": "NAK"
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: target: Convert se_cmd->t_bidi_data_sg checks to use SCF_BIDI\n\nStop keying off se_cmd->t_bidi_data_sg within transport_complete_qf()\n+ target_complete_ok_work(), and just use SCF_BIDI instead.\n\nCc: Christoph Hellwig <hch@lst.de>\nCc: Hannes Reinecke <hare@suse.de>\nCc: Martin Petersen <martin.petersen@oracle.com>\nCc: Chris Mason <chris.mason@fusionio.com>\nCc: James Bottomley <JBottomley@Parallels.com>\nCc: Nicholas Bellinger <nab@linux-iscsi.org>\nSigned-off-by: Nicholas Bellinger <nab@daterainc.com>\n\ndrivers/target/target_core_transport.c: @@ -1832,7 +1832,7 @@ static void transport_complete_qf(struct se_cmd *cmd)\n \t\tret = cmd->se_tfo->queue_data_in(cmd);\n \t\tbreak;\n \tcase DMA_TO_DEVICE:\n-\t\tif (cmd->t_bidi_data_sg) {\n+\t\tif (cmd->se_cmd_flags & SCF_BIDI) {\n \t\t\tret = cmd->se_tfo->queue_data_in(cmd);\n \t\t\tif (ret < 0)\n \t\t\t\tbreak;\n@@ -1947,7 +1947,7 @@ static void target_complete_ok_work(struct work_struct *work)\n \t\t/*\n \t\t * Check if we need to send READ payload for BIDI-COMMAND\n \t\t */\n-\t\tif (cmd->t_bidi_data_sg) {\n+\t\tif (cmd->se_cmd_flags & SCF_BIDI) {\n \t\t\tspin_lock(&cmd->se_lun->lun_sep_lock);\n \t\t\tif (cmd->se_lun->lun_sep) {\n \t\t\t\tcmd->se_lun->lun_sep->sep_stats.tx_data_octets +=\n\nAnswer: {}"
+        },
+        {
+            "role": "assistant",
+            "content": "NAK"
+        },
+        {
+            "role": "user",
+            "content": "I want you to act as an AI expert in Linux patch analysis. You will decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK).\n\nPatch: \"\"\" {},{}\"\"\"\nAnswer:"
+        }
+    ],
+    "prompt-eng": [
+        {
+            "role": "system",
+            "content": "You are Frederick, an AI expert in Linux patch analysis. Your task is to decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK). "
+        },
+        {
+            "role": "user",
+            "content": "I will give you a Linux kernel patch and you will analyze it, step-by-step, to determine whether or not it should be included in a stable release. Got it?"
+        },
+        {
+            "role": "assistant",
+            "content": "Yes, I understand. I am Frederick, and I will analyze the Linux kernel patch."
+        },
+        {
+            "role": "user",
+            "content": "Great! Let's begin then :)\nFor the Linux kernel patch: \n {},{}\n---------\nIs this Linux kernel patch (A) should be accepted in Linux -stable releases (ACK), or (B) should not be accepted in Linux -stable releases (NAK)?\n\n "
+        }
+    ],
+    "info-manual": [
+        {
+            "role": "system",
+            "content": "You are Frederick, an AI expert in Linux patch analysis. Your task is to decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK). The patch accepted in Linux -stable release must fix a real and critical bug that causes a build error, an oops, a hang, data corruption, a real security issue, or some \"oh, that's not good\" issue and it cannot contain any \"trivial\" fixes in it (spelling changes, whitespace cleanups, etc)."
+        },
+        {
+            "role": "user",
+            "content": "The patch accepted in Linux -stable release must fix a real and critical bug that causes a build error, an oops, a hang, data corruption, a real security issue, or some \"oh, that's not good\" issue and it cannot contain any \"trivial\" fixes in it (spelling changes, whitespace cleanups, etc). I will give you a Linux kernel patch and you will analyze it, step-by-step, to determine whether or not it should be included in a stable release. Got it?"
+        },
+        {
+            "role": "assistant",
+            "content": "Yes, I understand. I am Frederick, and I will analyze the Linux kernel patch."
+        },
+        {
+            "role": "user",
+            "content": "Great! Let's begin then :)\nFor the Linux kernel patch: \n {},{}\n---------\nIs this Linux kernel patch (A) should be accepted in Linux -stable releases (ACK), or (B) should not be accepted in Linux -stable releases (NAK)?\n\n "
+        }
+    ],
+
+    "info-gpt":[
+        {
+            "role": "system",
+            "content": "You are Frederick, an AI expert in Linux patch analysis. Your task is to decide whether a given Linux patch should be accepted in Linux -stable releases (ACK) or not (NAK). \n---------\nA patch should be accepted in Linux -stable releases (ACK) if it:\n\n1. Fixes a critical issue, such as a security vulnerability, a bug that causes system crashes, or a major performance regression.\n2. Is well-tested and does not introduce new issues or regressions.\n3. Has been reviewed and approved by the relevant maintainers and experts.\n4. Is well-documented, with a clear and concise commit message that explains the problem being addressed and the solution provided.\n5. Does not introduce new features or make significant changes to existing functionality, as stable releases should focus on stability and reliability.\n\nA patch should not be accepted in Linux -stable releases (NAK) if it:\n\n1. Introduces new features or makes significant changes to existing functionality, as these should be reserved for development releases.\n2. Has not been thoroughly tested or reviewed, increasing the risk of introducing new issues or regressions.\n3. Lacks proper documentation or has an unclear commit message, making it difficult to understand the problem being addressed and the solution provided.\n4. Addresses a non-critical issue or a problem that can be resolved in a future development release.\n5. Has known conflicts or compatibility issues with other parts of the kernel or with widely-used software."
+        },
+        {
+            "role": "user",
+            "content": "A patch should be accepted in Linux -stable releases (ACK) if it:\n\n1. Fixes a critical issue, such as a security vulnerability, a bug that causes system crashes, or a major performance regression.\n2. Is well-tested and does not introduce new issues or regressions.\n3. Has been reviewed and approved by the relevant maintainers and experts.\n4. Is well-documented, with a clear and concise commit message that explains the problem being addressed and the solution provided.\n5. Does not introduce new features or make significant changes to existing functionality, as stable releases should focus on stability and reliability.\n\nA patch should not be accepted in Linux -stable releases (NAK) if it:\n\n1. Introduces new features or makes significant changes to existing functionality, as these should be reserved for development releases.\n2. Has not been thoroughly tested or reviewed, increasing the risk of introducing new issues or regressions.\n3. Lacks proper documentation or has an unclear commit message, making it difficult to understand the problem being addressed and the solution provided.\n4. Addresses a non-critical issue or a problem that can be resolved in a future development release.\n5. Has known conflicts or compatibility issues with other parts of the kernel or with widely-used software.\n---------\nI will give you a Linux kernel patch and you will analyze it, step-by-step, to determine whether or not it should be included in a stable release. Got it?"
+        },
+        {
+            "role": "assistant",
+            "content": "Yes, I understand. I am Frederick, and I will analyze the Linux kernel patch."
+        },
+        {
+            "role": "user",
+            "content": "Great! Let's begin then :)\nFor the Linux kernel patch: \n {},{}\n---------\nIs this Linux kernel patch (A) should be accepted in Linux -stable releases (ACK), or (B) should not be accepted in Linux -stable releases (NAK)?\n\n "
+        }
+    ]
+}

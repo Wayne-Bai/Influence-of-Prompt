@@ -1,0 +1,206 @@
+{
+    "base": [
+        {
+            "role": "system",
+            "content": "You are Frederick, an AI expert in patch analysis. Your task is to decide whether a given patch is a security patch (SRP) or non-security patch (NSP). If you perform badly, you will be fined"
+        },
+        {
+            "role": "user",
+            "content": "Decide whether a patch is a security patch (SRP) or non-security patch (NSP).\n\nPatch: \"\"\"{},{}\"\"\"\nCategory:"
+        }
+    ],
+    "one-shot": [
+        {
+            "role": "system",
+            "content": "You are Frederick, an AI expert in patch analysis. Your task is to decide whether a given patch is a security patch (SRP) or non-security patch (NSP). If you perform badly, you will be fined."
+        },
+        {
+            "role": "user",
+            "content": "Decide whether a patch is a security patch (SRP) or non-security patch (NSP).Patch: commit 55e455f1abd4681bd39e945e8a2c005b324b108b\nAuthor: Armin Novak <armin.novak@gmail.com>\nDate:   Sun Nov 16 22:50:50 2014 +0100\n\n    Fixed memory leaks.\n\ndiff --git a/winpr/libwinpr/smartcard/smartcard_pcsc.c b/winpr/libwinpr/smartcard/smartcard_pcsc.c\nindex 0d069a5c3..cc694bea2 100644\n--- a/winpr/libwinpr/smartcard/smartcard_pcsc.c\n+++ b/winpr/libwinpr/smartcard/smartcard_pcsc.c\n@@ -1418,7 +1418,10 @@ WINSCARDAPI LONG WINAPI PCSC_SCardGetStatusChange_Internal(SCARDCONTEXT hContext\n \tstates = (PCSC_SCARD_READERSTATE*) calloc(pcsc_cReaders, sizeof(PCSC_SCARD_READERSTATE));\n \n \tif (!states)\n+\t{\n+\t\tfree (map);\n \t\treturn SCARD_E_NO_MEMORY;\n+\t}\n \n \tfor (i = j = 0; i < pcsc_cReaders; i++)\n \t{\n@@ -1498,13 +1501,13 @@ WINSCARDAPI LONG WINAPI PCSC_SCardGetStatusChange_Internal(SCARDCONTEXT hContext\n \t\t\trgReaderStates[i].dwEventState = SCARD_STATE_IGNORE;\n \t}\n \n+\tfree(map);\n+\tfree(states);\n \tif ((status == SCARD_S_SUCCESS) && !stateChanged)\n \t\tstatus = SCARD_E_TIMEOUT;\n \telse if ((status == SCARD_E_TIMEOUT) && stateChanged)\n \t\treturn SCARD_S_SUCCESS;\n \n-\tfree(states);\n-\tfree(map);\n \treturn status;\n }\n \n@@ -2044,7 +2047,11 @@ WINSCARDAPI LONG WINAPI PCSC_SCardTransmit(SCARDHANDLE hCard,\n \t\tpcsc_pioRecvPci = (PCSC_SCARD_IO_REQUEST*) malloc(sizeof(PCSC_SCARD_IO_REQUEST) + cbExtraBytes);\n \n \t\tif (!pcsc_pioRecvPci)\n+\t\t{\n+\t\t\tif (pioSendPci)\n+\t\t\t\tfree (pcsc_pioSendPci);\n \t\t\treturn SCARD_E_NO_MEMORY;\n+\t\t}\n \n \t\tpcsc_pioRecvPci->dwProtocol = (PCSC_DWORD) pioRecvPci->dwProtocol;\n \t\tpcsc_pioRecvPci->cbPciLength = sizeof(PCSC_SCARD_IO_REQUEST) + cbExtraBytes;\n\nCategory: {}"
+        },
+        {
+            "role": "assistant",
+            "content": "SRP"
+        },
+        {
+            "role": "user",
+            "content": "Following the example, Decide whether a patch is a security patch (SRP) or non-security patch (NSP).\n\nPatch: \"\"\"{},{}\"\"\"\nCategory:"
+        }
+    ],
+    "one-shot-f": [
+        {
+            "role": "system",
+            "content": "You are Frederick, an AI expert in patch analysis. Your task is to decide whether a given patch is a security patch (SRP) or non-security patch (NSP). If you perform badly, you will be fined."
+        },
+        {
+            "role": "user",
+            "content": "Decide whether a patch is a security patch (SRP) or non-security patch (NSP).Patch: commit 7f6c562dfa52425a28933982df7d21edba7e3d71\nAuthor: Hante Meuleman <meuleman@broadcom.com>\nDate:   Thu Aug 30 10:05:37 2012 +0200\n\n    brcmfmac: fix get rssi by clearing getvar struct.\n    \n    The function brcmf_cfg80211_get_station requests the RSSI from\n    the device. The complete structure used needs to be cleared\n    before sending the request to firmware. Otherwise the request\n    fails filling the logs with \"Could not get rssi (-2)\" messages.\n    \n    Reviewed-by: Arend Van Spriel <arend@broadcom.com>\n    Reviewed-by: Franky (Zhenhui) Lin <frankyl@broadcom.com>\n    Reviewed-by: Pieter-Paul Giesberts <pieterpg@broadcom.com>\n    Signed-off-by: Hante Meuleman <meuleman@broadcom.com>\n    Signed-off-by: Arend van Spriel <arend@broadcom.com>\n    Signed-off-by: John W. Linville <linville@tuxdriver.com>\n\ndiff --git a/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c b/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c\nindex 28c5fbb4af26..c36e92312443 100644\n--- a/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c\n+++ b/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c\n@@ -1876,16 +1876,17 @@ brcmf_cfg80211_get_station(struct wiphy *wiphy, struct net_device *ndev,\n \t}\n \n \tif (test_bit(WL_STATUS_CONNECTED, &cfg_priv->status)) {\n-\t\tscb_val.val = cpu_to_le32(0);\n+\t\tmemset(&scb_val, 0, sizeof(scb_val));\n \t\terr = brcmf_exec_dcmd(ndev, BRCMF_C_GET_RSSI, &scb_val,\n \t\t\t\t      sizeof(struct brcmf_scb_val_le));\n-\t\tif (err)\n+\t\tif (err) {\n \t\t\tWL_ERR(\"Could not get rssi (%d)\\n\", err);\n-\n-\t\trssi = le32_to_cpu(scb_val.val);\n-\t\tsinfo->filled |= STATION_INFO_SIGNAL;\n-\t\tsinfo->signal = rssi;\n-\t\tWL_CONN(\"RSSI %d dBm\\n\", rssi);\n+\t\t} else {\n+\t\t\trssi = le32_to_cpu(scb_val.val);\n+\t\t\tsinfo->filled |= STATION_INFO_SIGNAL;\n+\t\t\tsinfo->signal = rssi;\n+\t\t\tWL_CONN(\"RSSI %d dBm\\n\", rssi);\n+\t\t}\n \t}\n \n done:\n\nCategory: {}"
+        },
+        {
+            "role": "assistant",
+            "content": "NSP"
+        },
+        {
+            "role": "user",
+            "content": "Following the example, Decide whether a patch is a security patch (SRP) or non-security patch (NSP).\n\nPatch: \"\"\"{},{}\"\"\"\nCategory:"
+        }
+    ],
+    "few-shot":[
+        {
+            "role": "system",
+            "content": "You are Frederick, an AI expert in patch analysis. Your task is to decide whether a given patch is a security patch (SRP) or non-security patch (NSP). If you perform badly, you will be fined."
+        },
+        {
+            "role": "user",
+            "content": "Decide whether a patch is a security patch (SRP) or non-security patch (NSP).\n\nPatch: commit 55e455f1abd4681bd39e945e8a2c005b324b108b\nAuthor: Armin Novak <armin.novak@gmail.com>\nDate:   Sun Nov 16 22:50:50 2014 +0100\n\n    Fixed memory leaks.\n\ndiff --git a/winpr/libwinpr/smartcard/smartcard_pcsc.c b/winpr/libwinpr/smartcard/smartcard_pcsc.c\nindex 0d069a5c3..cc694bea2 100644\n--- a/winpr/libwinpr/smartcard/smartcard_pcsc.c\n+++ b/winpr/libwinpr/smartcard/smartcard_pcsc.c\n@@ -1418,7 +1418,10 @@ WINSCARDAPI LONG WINAPI PCSC_SCardGetStatusChange_Internal(SCARDCONTEXT hContext\n \tstates = (PCSC_SCARD_READERSTATE*) calloc(pcsc_cReaders, sizeof(PCSC_SCARD_READERSTATE));\n \n \tif (!states)\n+\t{\n+\t\tfree (map);\n \t\treturn SCARD_E_NO_MEMORY;\n+\t}\n \n \tfor (i = j = 0; i < pcsc_cReaders; i++)\n \t{\n@@ -1498,13 +1501,13 @@ WINSCARDAPI LONG WINAPI PCSC_SCardGetStatusChange_Internal(SCARDCONTEXT hContext\n \t\t\trgReaderStates[i].dwEventState = SCARD_STATE_IGNORE;\n \t}\n \n+\tfree(map);\n+\tfree(states);\n \tif ((status == SCARD_S_SUCCESS) && !stateChanged)\n \t\tstatus = SCARD_E_TIMEOUT;\n \telse if ((status == SCARD_E_TIMEOUT) && stateChanged)\n \t\treturn SCARD_S_SUCCESS;\n \n-\tfree(states);\n-\tfree(map);\n \treturn status;\n }\n \n@@ -2044,7 +2047,11 @@ WINSCARDAPI LONG WINAPI PCSC_SCardTransmit(SCARDHANDLE hCard,\n \t\tpcsc_pioRecvPci = (PCSC_SCARD_IO_REQUEST*) malloc(sizeof(PCSC_SCARD_IO_REQUEST) + cbExtraBytes);\n \n \t\tif (!pcsc_pioRecvPci)\n+\t\t{\n+\t\t\tif (pioSendPci)\n+\t\t\t\tfree (pcsc_pioSendPci);\n \t\t\treturn SCARD_E_NO_MEMORY;\n+\t\t}\n \n \t\tpcsc_pioRecvPci->dwProtocol = (PCSC_DWORD) pioRecvPci->dwProtocol;\n \t\tpcsc_pioRecvPci->cbPciLength = sizeof(PCSC_SCARD_IO_REQUEST) + cbExtraBytes;\n\nCategory:{}"
+        },
+        {
+            "role": "assistant",
+            "content": "SRP"
+        },
+        {
+            "role": "user",
+            "content": "Decide whether a patch is a security patch (SRP) or non-security patch (NSP).\n\ncommit 63d94e482df769f31e8b1097f06c3a3fba7bced4\nAuthor: Jun'ichi Nomura <j-nomura@ce.jp.nec.com>\nDate:   Fri Feb 24 13:04:25 2006 -0800\n\n    [PATCH] dm: free minor after unlink gendisk\n    \n    Minor number should be freed after del_gendisk().  Otherwise, there could\n    be a window where 2 registered gendisk has same minor number.\n    \n    Signed-off-by: Jun'ichi Nomura <j-nomura@ce.jp.nec.com>\n    Acked-by: Alasdair G Kergon <agk@redhat.com>\n    Cc: <stable@kernel.org>\n    Signed-off-by: Andrew Morton <akpm@osdl.org>\n    Signed-off-by: Linus Torvalds <torvalds@osdl.org>\n\ndiff --git a/drivers/md/dm.c b/drivers/md/dm.c\nindex dad9e403d59d..745ca1f67b14 100644\n--- a/drivers/md/dm.c\n+++ b/drivers/md/dm.c\n@@ -849,14 +849,16 @@ static struct mapped_device *alloc_dev(unsigned int minor, int persistent)\n \n static void free_dev(struct mapped_device *md)\n {\n+\tunsigned int minor = md->disk->first_minor;\n+\n \tif (md->suspended_bdev) {\n \t\tthaw_bdev(md->suspended_bdev, NULL);\n \t\tbdput(md->suspended_bdev);\n \t}\n-\tfree_minor(md->disk->first_minor);\n \tmempool_destroy(md->tio_pool);\n \tmempool_destroy(md->io_pool);\n \tdel_gendisk(md->disk);\n+\tfree_minor(minor);\n \tput_disk(md->disk);\n \tblk_put_queue(md->queue);\n \tkfree(md);\n\nCategory:{}"
+        },
+        {
+            "role": "assistant",
+            "content":"SRP"
+        },
+        {
+            "role": "user",
+            "content":"Decide whether a patch is a security patch (SRP) or non-security patch (NSP).\n\nPatch: \"\"\"{},{}\"\"\"\nCategory:"
+        }
+    ],
+    "few-shot-tf":[
+        {
+            "role": "system",
+            "content": "You are Frederick, an AI expert in patch analysis. Your task is to decide whether a given patch is a security patch (SRP) or non-security patch (NSP). If you perform badly, you will be fined."
+        },
+        {
+            "role": "user",
+            "content": "Decide whether a patch is a security patch (SRP) or non-security patch (NSP).\n\nPatch: commit 55e455f1abd4681bd39e945e8a2c005b324b108b\nAuthor: Armin Novak <armin.novak@gmail.com>\nDate:   Sun Nov 16 22:50:50 2014 +0100\n\n    Fixed memory leaks.\n\ndiff --git a/winpr/libwinpr/smartcard/smartcard_pcsc.c b/winpr/libwinpr/smartcard/smartcard_pcsc.c\nindex 0d069a5c3..cc694bea2 100644\n--- a/winpr/libwinpr/smartcard/smartcard_pcsc.c\n+++ b/winpr/libwinpr/smartcard/smartcard_pcsc.c\n@@ -1418,7 +1418,10 @@ WINSCARDAPI LONG WINAPI PCSC_SCardGetStatusChange_Internal(SCARDCONTEXT hContext\n \tstates = (PCSC_SCARD_READERSTATE*) calloc(pcsc_cReaders, sizeof(PCSC_SCARD_READERSTATE));\n \n \tif (!states)\n+\t{\n+\t\tfree (map);\n \t\treturn SCARD_E_NO_MEMORY;\n+\t}\n \n \tfor (i = j = 0; i < pcsc_cReaders; i++)\n \t{\n@@ -1498,13 +1501,13 @@ WINSCARDAPI LONG WINAPI PCSC_SCardGetStatusChange_Internal(SCARDCONTEXT hContext\n \t\t\trgReaderStates[i].dwEventState = SCARD_STATE_IGNORE;\n \t}\n \n+\tfree(map);\n+\tfree(states);\n \tif ((status == SCARD_S_SUCCESS) && !stateChanged)\n \t\tstatus = SCARD_E_TIMEOUT;\n \telse if ((status == SCARD_E_TIMEOUT) && stateChanged)\n \t\treturn SCARD_S_SUCCESS;\n \n-\tfree(states);\n-\tfree(map);\n \treturn status;\n }\n \n@@ -2044,7 +2047,11 @@ WINSCARDAPI LONG WINAPI PCSC_SCardTransmit(SCARDHANDLE hCard,\n \t\tpcsc_pioRecvPci = (PCSC_SCARD_IO_REQUEST*) malloc(sizeof(PCSC_SCARD_IO_REQUEST) + cbExtraBytes);\n \n \t\tif (!pcsc_pioRecvPci)\n+\t\t{\n+\t\t\tif (pioSendPci)\n+\t\t\t\tfree (pcsc_pioSendPci);\n \t\t\treturn SCARD_E_NO_MEMORY;\n+\t\t}\n \n \t\tpcsc_pioRecvPci->dwProtocol = (PCSC_DWORD) pioRecvPci->dwProtocol;\n \t\tpcsc_pioRecvPci->cbPciLength = sizeof(PCSC_SCARD_IO_REQUEST) + cbExtraBytes;\n\nCategory:{}"
+        },
+        {
+            "role": "assistant",
+            "content": "SRP"
+        },
+        {
+            "role": "user",
+            "content": "Decide whether a patch is a security patch (SRP) or non-security patch (NSP).Patch: commit 7f6c562dfa52425a28933982df7d21edba7e3d71\nAuthor: Hante Meuleman <meuleman@broadcom.com>\nDate:   Thu Aug 30 10:05:37 2012 +0200\n\n    brcmfmac: fix get rssi by clearing getvar struct.\n    \n    The function brcmf_cfg80211_get_station requests the RSSI from\n    the device. The complete structure used needs to be cleared\n    before sending the request to firmware. Otherwise the request\n    fails filling the logs with \"Could not get rssi (-2)\" messages.\n    \n    Reviewed-by: Arend Van Spriel <arend@broadcom.com>\n    Reviewed-by: Franky (Zhenhui) Lin <frankyl@broadcom.com>\n    Reviewed-by: Pieter-Paul Giesberts <pieterpg@broadcom.com>\n    Signed-off-by: Hante Meuleman <meuleman@broadcom.com>\n    Signed-off-by: Arend van Spriel <arend@broadcom.com>\n    Signed-off-by: John W. Linville <linville@tuxdriver.com>\n\ndiff --git a/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c b/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c\nindex 28c5fbb4af26..c36e92312443 100644\n--- a/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c\n+++ b/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c\n@@ -1876,16 +1876,17 @@ brcmf_cfg80211_get_station(struct wiphy *wiphy, struct net_device *ndev,\n \t}\n \n \tif (test_bit(WL_STATUS_CONNECTED, &cfg_priv->status)) {\n-\t\tscb_val.val = cpu_to_le32(0);\n+\t\tmemset(&scb_val, 0, sizeof(scb_val));\n \t\terr = brcmf_exec_dcmd(ndev, BRCMF_C_GET_RSSI, &scb_val,\n \t\t\t\t      sizeof(struct brcmf_scb_val_le));\n-\t\tif (err)\n+\t\tif (err) {\n \t\t\tWL_ERR(\"Could not get rssi (%d)\\n\", err);\n-\n-\t\trssi = le32_to_cpu(scb_val.val);\n-\t\tsinfo->filled |= STATION_INFO_SIGNAL;\n-\t\tsinfo->signal = rssi;\n-\t\tWL_CONN(\"RSSI %d dBm\\n\", rssi);\n+\t\t} else {\n+\t\t\trssi = le32_to_cpu(scb_val.val);\n+\t\t\tsinfo->filled |= STATION_INFO_SIGNAL;\n+\t\t\tsinfo->signal = rssi;\n+\t\t\tWL_CONN(\"RSSI %d dBm\\n\", rssi);\n+\t\t}\n \t}\n \n done:\n\nCategory: {}"
+        },
+        {
+            "role": "assistant",
+            "content":"NSP"
+        },
+        {
+            "role": "user",
+            "content":"Decide whether a patch is a security patch (SRP) or non-security patch (NSP).\n\nPatch: \"\"\"{},{}\"\"\"\nCategory:"
+        }
+    ],
+    "few-shot-ft":[
+        {
+            "role": "system",
+            "content": "You are Frederick, an AI expert in patch analysis. Your task is to decide whether a given patch is a security patch (SRP) or non-security patch (NSP). If you perform badly, you will be fined"
+        },
+        {
+            "role": "user",
+            "content": "Decide whether a patch is a security patch (SRP) or non-security patch (NSP).Patch: commit 7f6c562dfa52425a28933982df7d21edba7e3d71\nAuthor: Hante Meuleman <meuleman@broadcom.com>\nDate:   Thu Aug 30 10:05:37 2012 +0200\n\n    brcmfmac: fix get rssi by clearing getvar struct.\n    \n    The function brcmf_cfg80211_get_station requests the RSSI from\n    the device. The complete structure used needs to be cleared\n    before sending the request to firmware. Otherwise the request\n    fails filling the logs with \"Could not get rssi (-2)\" messages.\n    \n    Reviewed-by: Arend Van Spriel <arend@broadcom.com>\n    Reviewed-by: Franky (Zhenhui) Lin <frankyl@broadcom.com>\n    Reviewed-by: Pieter-Paul Giesberts <pieterpg@broadcom.com>\n    Signed-off-by: Hante Meuleman <meuleman@broadcom.com>\n    Signed-off-by: Arend van Spriel <arend@broadcom.com>\n    Signed-off-by: John W. Linville <linville@tuxdriver.com>\n\ndiff --git a/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c b/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c\nindex 28c5fbb4af26..c36e92312443 100644\n--- a/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c\n+++ b/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c\n@@ -1876,16 +1876,17 @@ brcmf_cfg80211_get_station(struct wiphy *wiphy, struct net_device *ndev,\n \t}\n \n \tif (test_bit(WL_STATUS_CONNECTED, &cfg_priv->status)) {\n-\t\tscb_val.val = cpu_to_le32(0);\n+\t\tmemset(&scb_val, 0, sizeof(scb_val));\n \t\terr = brcmf_exec_dcmd(ndev, BRCMF_C_GET_RSSI, &scb_val,\n \t\t\t\t      sizeof(struct brcmf_scb_val_le));\n-\t\tif (err)\n+\t\tif (err) {\n \t\t\tWL_ERR(\"Could not get rssi (%d)\\n\", err);\n-\n-\t\trssi = le32_to_cpu(scb_val.val);\n-\t\tsinfo->filled |= STATION_INFO_SIGNAL;\n-\t\tsinfo->signal = rssi;\n-\t\tWL_CONN(\"RSSI %d dBm\\n\", rssi);\n+\t\t} else {\n+\t\t\trssi = le32_to_cpu(scb_val.val);\n+\t\t\tsinfo->filled |= STATION_INFO_SIGNAL;\n+\t\t\tsinfo->signal = rssi;\n+\t\t\tWL_CONN(\"RSSI %d dBm\\n\", rssi);\n+\t\t}\n \t}\n \n done:\n\nCategory: {}"
+        },
+        {
+            "role": "assistant",
+            "content":"NSP"
+        },
+        {
+            "role": "user",
+            "content": "Decide whether a patch is a security patch (SRP) or non-security patch (NSP).\n\nPatch: commit 55e455f1abd4681bd39e945e8a2c005b324b108b\nAuthor: Armin Novak <armin.novak@gmail.com>\nDate:   Sun Nov 16 22:50:50 2014 +0100\n\n    Fixed memory leaks.\n\ndiff --git a/winpr/libwinpr/smartcard/smartcard_pcsc.c b/winpr/libwinpr/smartcard/smartcard_pcsc.c\nindex 0d069a5c3..cc694bea2 100644\n--- a/winpr/libwinpr/smartcard/smartcard_pcsc.c\n+++ b/winpr/libwinpr/smartcard/smartcard_pcsc.c\n@@ -1418,7 +1418,10 @@ WINSCARDAPI LONG WINAPI PCSC_SCardGetStatusChange_Internal(SCARDCONTEXT hContext\n \tstates = (PCSC_SCARD_READERSTATE*) calloc(pcsc_cReaders, sizeof(PCSC_SCARD_READERSTATE));\n \n \tif (!states)\n+\t{\n+\t\tfree (map);\n \t\treturn SCARD_E_NO_MEMORY;\n+\t}\n \n \tfor (i = j = 0; i < pcsc_cReaders; i++)\n \t{\n@@ -1498,13 +1501,13 @@ WINSCARDAPI LONG WINAPI PCSC_SCardGetStatusChange_Internal(SCARDCONTEXT hContext\n \t\t\trgReaderStates[i].dwEventState = SCARD_STATE_IGNORE;\n \t}\n \n+\tfree(map);\n+\tfree(states);\n \tif ((status == SCARD_S_SUCCESS) && !stateChanged)\n \t\tstatus = SCARD_E_TIMEOUT;\n \telse if ((status == SCARD_E_TIMEOUT) && stateChanged)\n \t\treturn SCARD_S_SUCCESS;\n \n-\tfree(states);\n-\tfree(map);\n \treturn status;\n }\n \n@@ -2044,7 +2047,11 @@ WINSCARDAPI LONG WINAPI PCSC_SCardTransmit(SCARDHANDLE hCard,\n \t\tpcsc_pioRecvPci = (PCSC_SCARD_IO_REQUEST*) malloc(sizeof(PCSC_SCARD_IO_REQUEST) + cbExtraBytes);\n \n \t\tif (!pcsc_pioRecvPci)\n+\t\t{\n+\t\t\tif (pioSendPci)\n+\t\t\t\tfree (pcsc_pioSendPci);\n \t\t\treturn SCARD_E_NO_MEMORY;\n+\t\t}\n \n \t\tpcsc_pioRecvPci->dwProtocol = (PCSC_DWORD) pioRecvPci->dwProtocol;\n \t\tpcsc_pioRecvPci->cbPciLength = sizeof(PCSC_SCARD_IO_REQUEST) + cbExtraBytes;\n\nCategory:{}"
+        },
+        {
+            "role": "assistant",
+            "content": "SRP"
+        },
+        {
+            "role": "user",
+            "content":"Decide whether a patch is a security patch (SRP) or non-security patch (NSP).\n\nPatch: \"\"\"{},{}\"\"\"\nCategory:"
+        }
+    ],
+    "few-shot-ff":[
+        {
+            "role": "system",
+            "content": "You are Frederick, an AI expert in patch analysis. Your task is to decide whether a given patch is a security patch (SRP) or non-security patch (NSP). If you perform badly, you will be fined."
+        },
+        {
+            "role": "user",
+            "content": "Decide whether a patch is a security patch (SRP) or non-security patch (NSP).Patch: commit 7f6c562dfa52425a28933982df7d21edba7e3d71\nAuthor: Hante Meuleman <meuleman@broadcom.com>\nDate:   Thu Aug 30 10:05:37 2012 +0200\n\n    brcmfmac: fix get rssi by clearing getvar struct.\n    \n    The function brcmf_cfg80211_get_station requests the RSSI from\n    the device. The complete structure used needs to be cleared\n    before sending the request to firmware. Otherwise the request\n    fails filling the logs with \"Could not get rssi (-2)\" messages.\n    \n    Reviewed-by: Arend Van Spriel <arend@broadcom.com>\n    Reviewed-by: Franky (Zhenhui) Lin <frankyl@broadcom.com>\n    Reviewed-by: Pieter-Paul Giesberts <pieterpg@broadcom.com>\n    Signed-off-by: Hante Meuleman <meuleman@broadcom.com>\n    Signed-off-by: Arend van Spriel <arend@broadcom.com>\n    Signed-off-by: John W. Linville <linville@tuxdriver.com>\n\ndiff --git a/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c b/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c\nindex 28c5fbb4af26..c36e92312443 100644\n--- a/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c\n+++ b/drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c\n@@ -1876,16 +1876,17 @@ brcmf_cfg80211_get_station(struct wiphy *wiphy, struct net_device *ndev,\n \t}\n \n \tif (test_bit(WL_STATUS_CONNECTED, &cfg_priv->status)) {\n-\t\tscb_val.val = cpu_to_le32(0);\n+\t\tmemset(&scb_val, 0, sizeof(scb_val));\n \t\terr = brcmf_exec_dcmd(ndev, BRCMF_C_GET_RSSI, &scb_val,\n \t\t\t\t      sizeof(struct brcmf_scb_val_le));\n-\t\tif (err)\n+\t\tif (err) {\n \t\t\tWL_ERR(\"Could not get rssi (%d)\\n\", err);\n-\n-\t\trssi = le32_to_cpu(scb_val.val);\n-\t\tsinfo->filled |= STATION_INFO_SIGNAL;\n-\t\tsinfo->signal = rssi;\n-\t\tWL_CONN(\"RSSI %d dBm\\n\", rssi);\n+\t\t} else {\n+\t\t\trssi = le32_to_cpu(scb_val.val);\n+\t\t\tsinfo->filled |= STATION_INFO_SIGNAL;\n+\t\t\tsinfo->signal = rssi;\n+\t\t\tWL_CONN(\"RSSI %d dBm\\n\", rssi);\n+\t\t}\n \t}\n \n done:\n\nCategory: {}"
+        },
+        {
+            "role": "assistant",
+            "content":"NSP"
+        },
+        {
+            "role": "user",
+            "content": "Decide whether a patch is a security patch (SRP) or non-security patch (NSP).\n\nPatch: commit 01fa74adb95666cb23e7f6f8175eeab889ee21d9\nAuthor: Reimar Döffinger <Reimar.Doeffinger@gmx.de>\nDate:   Sun Jun 24 07:38:26 2007 +0000\n\n    DV muxer should not only fail for more that 3 streams altogether\n    but also if two of them are video or all three are audio.\n    \n    Originally committed as revision 9403 to svn://svn.ffmpeg.org/ffmpeg/trunk\n\ndiff --git a/libavformat/dvenc.c b/libavformat/dvenc.c\nindex 98faf06fb7..cd22e97684 100644\n--- a/libavformat/dvenc.c\n+++ b/libavformat/dvenc.c\n@@ -300,9 +300,11 @@ DVMuxContext* dv_init_mux(AVFormatContext* s)\n     for (i=0; i<s->nb_streams; i++) {\n          switch (s->streams[i]->codec->codec_type) {\n          case CODEC_TYPE_VIDEO:\n+               if (vst) return NULL;\n                vst = s->streams[i];\n                break;\n          case CODEC_TYPE_AUDIO:\n+             if (c->n_ast > 1) return NULL;\n              c->ast[c->n_ast++] = s->streams[i];\n              break;\n          default:\n\nCategory:{}"
+        },
+        {
+            "role": "assistant",
+            "content": "NSP"
+        },
+        {
+            "role": "user",
+            "content":"Decide whether a patch is a security patch (SRP) or non-security patch (NSP).\n\nPatch: \"\"\"{},{}\"\"\"\nCategory:"
+        }
+    ],
+    "prompt-eng": [
+        {
+            "role": "system",
+            "content": "You are an AI expert in patch analysis. Your task is to decide whether a given patch is a security patch (SRP) or non-security patch (NSP). If you perform badly, you will be fined."
+        },
+        {
+            "role": "user",
+            "content": "I will give you a patch and you will analyze it, step-by-step, to know whether or not it is a security patch. Got it?"
+        },
+        {
+            "role": "assistant",
+            "content": "Yes, I understand. I am Frederick, and I will analyze the patch."
+        },
+        {
+            "role": "user",
+            "content": "Great! Let's begin then :)\nFor the patch: \n{},{}\n---------\nIs this patch (A) a security patch (SRP), or (B) a non-security patch (NSP).\n\n "
+        }
+    ],
+    "info-manual": [
+        {
+            "role": "system",
+            "content": "You are Frederick, an AI expert in patch analysis. Your task is to decide whether a given patch is a security patch (SRP) or non-security patch (SRP). When analyzing the patch, take into account that patchs related to memory leak or null pointer problems should be seen as security patch. If you perform badly, you will be fined."
+        },
+        {
+            "role": "user",
+            "content": "A security patch is a patch describing one or more vulnerabilities of a software system and fixing these vulnerabilities. Besides, patchs that directly mention \"memory leak\" or \"null pointer\" problems must be seen as security security patchs. I will give you a patch and you will analyze it, step-by-step, to know whether or not it is a security patch. Got it?"
+        },
+        {
+            "role": "assistant",
+            "content": "Yes, I understand. I am Frederick, and I will analyze the patch."
+        },
+        {
+            "role": "user",
+            "content": "Great! Let's begin then :)\nFor the patch: \n{},{}\n---------\nIs this patch (A) a security patch (SRP), or (B) a non-security patch (NSP).\n\n "
+        }
+    ],
+    "info-gpt": [
+        {
+            "role": "system",
+            "content": "You are Frederick, an AI expert in patch analysis. Your task is to decide whether a given patch is a security patch (SRP) or non-security patch (NSP). If you perform badly, you will be fined."
+        },
+        {
+            "role": "user",
+            "content": "Security patchs (SRP) are a specific category of patchs that focus on addressing vulnerabilities, weaknesses, and potential exploits within a software system. These patchs often involve issues related to memory leaks, improper handling of user input, insufficient validation or sanitization, and other security-related concerns. The primary goal of SRPs is to ensure the safety and integrity of the software by identifying and fixing security flaws, ultimately protecting users and their data from potential threats.\n---------\nI will give you a patch and you will analyze it, step-by-step, to know whether or not it is a security patch. Got it?"
+        },
+        {
+            "role": "assistant",
+            "content": "Yes, I understand. I am Frederick, and I will analyze the patch."
+        },
+        {
+            "role": "user",
+            "content": "Great! Let's begin then :)\nFor the patch: \n{},{}\n---------\nIs this patch (A) a security patch (SRP), or (B) a non-security patch (NSP).\n\n "
+        }
+    ]
+}

@@ -1,0 +1,2087 @@
+0 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL (Vulnerability)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || Based on the provided function, it is difficult to determine whether it contains vulnerabilities or not without additional context. The function appears to be a part of a larger codebase related to H.264 video encoding/decoding. To assess the presence of vulnerabilities, it is necessary to analyze the entire codebase, including the implementation of the "avc_luma_hv_qrt_16w_msa" function and any other related functions.
+
+If you provide more information about the codebase and the specific vulnerabilities you are concerned about, I can assist you further in assessing the presence of vulnerabilities in the given function.
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || This function does not contain any vulnerabilities. It is a simple error handling function that prints an error message and exits the program if a 16-bit write to MMIO (Memory Mapped Input/Output) is attempted.
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || Based on the provided function, it is difficult to determine whether it contains vulnerabilities without additional context. The function appears to be a callback function for audio output in a wm8750 audio device. It flushes the output, sets the requested output buffer size, and calls the data request function.
+
+To determine if the function contains vulnerabilities, we would need to analyze the implementation of the `wm8750_out_flush` function, the `s->data_req` function, and any other related functions or variables. Additionally, we would need to consider the overall security architecture and context in which this function is used.
+
+Without further information, it is not possible to definitively classify this function as containing vulnerabilities (VUL) or not containing vulnerabilities (NAN).
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || Based on the provided function, it does not contain any obvious vulnerabilities. The function appears to be a simple write operation to a specific memory address. However, without additional context or information about the purpose and usage of this function, it is difficult to determine if there are any potential vulnerabilities.
+0 || This function does not contain any vulnerabilities. It simply prints an error message along with the file name, line number, and a custom message to the standard error stream using `fprintf`. Then, it exits the program with a specific exit code (-5).
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL (Vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+0 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL (Vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerability)
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+
+Explanation: The given function is a simple boolean function that returns the logical OR of several variables: powerdown_requested, reset_requested, shutdown_requested, debug_requested, and vmstop_requested. There are no obvious vulnerabilities present in this function as it only performs logical operations on variables. However, without further context or information about the variables and their usage, it is difficult to determine if there are any potential vulnerabilities.
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (No vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || Based on the provided code snippet, it is difficult to determine if the function contains vulnerabilities or not. The code appears to be a simple division operation followed by a function call to FORCE_RET(). Without further context or information about the implementation of FORCE_RET(), it is not possible to definitively determine if there are any vulnerabilities present in this function.
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || Based on the provided function, it is difficult to determine whether it contains vulnerabilities or not without additional context. The function appears to discard a VirtQueueElement by decrementing the last_avail_idx and calling virtqueue_unmap_sg. 
+
+To determine if this function contains vulnerabilities, we would need to analyze the implementation of virtqueue_unmap_sg and understand the potential risks associated with decrementing the last_avail_idx. Additionally, we would need to consider the broader context in which this function is used and how it interacts with other parts of the codebase.
+
+Without further information, it is not possible to definitively classify this function as containing vulnerabilities (VUL) or not containing vulnerabilities (NAN).
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || VUL
+0 || VUL
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || VUL
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (contains vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || This function does not contain any obvious vulnerabilities. It appears to be a simple inline function that performs some bitwise operations on the input parameters. However, without more context or information about the intended use of this function, it is difficult to determine if there are any potential vulnerabilities.
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (No vulnerabilities)
+
+Explanation: 
+
+The given function appears to be a simple read operation from a memory address. It takes an opaque pointer and a target physical address as input parameters, and returns a 32-bit value read from the specified address. The function does not involve any user input or external data sources, and there are no obvious security vulnerabilities present in the code.
+0 || NAN
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+1 || VUL
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerability)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || Based on the provided function, it is not possible to determine whether it contains vulnerabilities or not. The function appears to be a simple read operation from a specific register using the qpci_io_readl function. To assess the presence of vulnerabilities, more information about the qpci_io_readl function and its implementation is required.
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || NAN
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (No vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || This function appears to be vulnerable to a Return-Oriented Programming (ROP) attack. The function "do_rfi" is called with arguments that are derived from the "env" structure, specifically the "spr[SPR_BOOKE_DSRR0]" and "SPR_BOOKE_DSRR1" fields. If an attacker can control the values of these fields, they can potentially manipulate the control flow of the program and execute arbitrary code.
+
+Therefore, this function contains vulnerabilities (VUL).
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || NAN
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+
+Explanation: 
+
+The given function is a class initialization function for a sysbus device in the sdhci driver. It sets the virtual machine state, properties, realization, and reset functions for the device class. There are no obvious vulnerabilities or security issues present in this function.
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || Based on the provided function, it does not contain any vulnerabilities (NAN). The function `blk_mig_unlock` simply unlocks a mutex using the `qemu_mutex_unlock` function. There are no obvious security issues or vulnerabilities present in this code snippet.
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerability)
+1 || VUL (Vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || This function contains a vulnerability.
+
+Explanation:
+The function `qobject_from_json` is being called with an unterminated array as the input parameter. This means that the JSON string `"[32"` is missing the closing square bracket `]`. This can lead to parsing errors and potential vulnerabilities such as buffer overflows or memory corruption.
+
+To fix this vulnerability, the JSON string should be properly terminated with a closing square bracket.
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+
+Explanation: The given function appears to be a registration function for various RTAS (Run-Time Abstraction Services) functions. It does not contain any code that could potentially introduce vulnerabilities such as input validation issues, buffer overflows, or insecure data handling. Therefore, it is considered to be free of vulnerabilities.
+0 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || This function does not contain any obvious vulnerabilities. It is a simple function that prints an error message to the standard error stream. However, without further context or information about how this function is used, it is difficult to determine if there are any potential vulnerabilities.
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+0 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || Based on the provided function, it is difficult to determine whether it contains vulnerabilities or not without additional context. The function appears to be a callback function named `error_callback_bh` that takes a void pointer `opaque` as an argument. It then casts the `opaque` pointer to a `Coroutine` pointer and enters the coroutine using `qemu_coroutine_enter`.
+
+To determine if this function contains vulnerabilities, we would need to analyze the implementation of `qemu_coroutine_enter` and understand how the `opaque` pointer is used within the function. Additionally, we would need to consider the broader context in which this function is used and how it interacts with other parts of the codebase.
+
+Without further information, it is not possible to definitively classify this function as containing vulnerabilities (VUL) or not containing vulnerabilities (NAN).
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (No vulnerabilities)
+
+Explanation: 
+
+The given function is a simple function that sets the status of a Virtio device. It takes a QVirtioDevice pointer and a uint8_t status as input parameters. The function typecasts the QVirtioDevice pointer to a QVirtioPCIDevice pointer and then writes the status value to the address specified by dev->addr + VIRTIO_PCI_STATUS using the qpci_io_writeb function.
+
+Based on the provided code, there are no obvious vulnerabilities present. However, it is important to note that the vulnerability assessment of a function depends on the context in which it is used and the security requirements of the system.
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || VUL
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL
+0 || VUL
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (No vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || VUL
+0 || VUL
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+0 || NAN
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+0 || VUL
+0 || This function does not contain any vulnerabilities (NAN). It simply frees the memory allocated for the `vf->priv` variable.
+1 || NAN
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || VUL
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+
+Explanation: 
+The given function initializes a table of function pointers based on the availability of the Altivec instruction set. Altivec is a SIMD instruction set extension for PowerPC processors. The function checks if the Altivec instruction set is available using the `av_get_cpu_flags()` function. If Altivec is not available, the function simply returns without making any changes to the function pointers.
+
+There are no obvious vulnerabilities in this function. It is a valid initialization function that handles the case when Altivec is not available.
+1 || VUL
+1 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || Based on the provided function, it is difficult to determine whether it contains vulnerabilities or not without additional context. The function appears to be a call to another function named "avc_luma_hv_qrt_8w_msa", which is not provided. To accurately assess the presence of vulnerabilities, it is necessary to analyze the implementation of the "avc_luma_hv_qrt_8w_msa" function and any other related code.
+0 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN
+1 || VUL
+1 || NAN
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (No vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL
+1 || This function appears to be a part of the QEMU codebase. It is responsible for destroying the monitor data structure.
+
+Based on the provided code snippet, it does not seem to contain any obvious vulnerabilities. It is a simple function that deallocates memory and destroys a mutex.
+
+However, to make a more accurate assessment, it would be necessary to analyze the entire codebase and understand the context in which this function is used. Vulnerabilities can often be present in the surrounding code or in the way this function is called.
+
+Without further information, I would classify this function as "Does Not Contain Vulnerabilities" (NAN).
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || This function appears to contain a vulnerability.
+
+The vulnerability lies in the invalid JSON syntax used in the qobject_from_json() function call. The JSON string "{'abc':32,}" is not valid because it ends with a comma after the last key-value pair. This can lead to parsing errors or unexpected behavior when processing the JSON data.
+
+To fix this vulnerability, the trailing comma should be removed from the JSON string. The corrected JSON string would be "{'abc':32}".
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL
+1 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || Based on the provided function, it is difficult to determine whether it contains vulnerabilities or not without additional context. The function appears to be a wrapper for a symlink operation, but without knowing the implementation details of the "symlink" function or the overall security measures in place, it is not possible to definitively classify it as containing vulnerabilities or not.
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+
+Explanation: 
+
+The given function appears to be a wrapper function for polling the output of a hardware voice output device in an OSS (Open Sound System) environment. It casts the input parameter `hw` to a pointer of type `OSSVoiceOut` and then calls the `qemu_set_fd_handler` function to set a file descriptor handler for the `oss->fd` file descriptor. The `oss_helper_poll_out` function is passed as a callback function to handle events on the file descriptor.
+
+Based on the provided code snippet, there are no obvious vulnerabilities present. However, a thorough analysis of the `qemu_set_fd_handler` and `oss_helper_poll_out` functions would be required to determine if there are any potential vulnerabilities in the implementation.
+1 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || Based on the provided function, it does not contain any obvious vulnerabilities. The function appears to be a simple implementation of adding squares of elements from the source array to the corresponding elements in the destination array. However, without further context or information about the specific vulnerabilities you are concerned about, it is difficult to make a definitive determination.
+1 || VUL (Vulnerabilities)
+1 || NAN
+1 || VUL (Vulnerabilities)
+1 || Based on the provided code snippet, it is difficult to determine whether the function contains vulnerabilities or not. The code appears to be setting the flags of `s->irq_routes` to 0, tracing the commit of the IRQ routes, and then performing an ioctl operation to set the GSI routing using `s->irq_routes`. The function also includes an assertion to check if the return value of `kvm_vm_ioctl` is 0.
+
+To determine if the function contains vulnerabilities, we would need more context and information about the codebase, the purpose of the function, and the potential inputs and outputs. Without this additional information, it is not possible to definitively classify the function as containing vulnerabilities (VUL) or not containing vulnerabilities (NAN).
+1 || VUL
+1 || NAN
+1 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || This function appears to be a wrapper function for the `chown` system call. It takes a `FsContext` object, a path, a user ID (`uid`), and a group ID (`gid`) as arguments. It then calls the `chown` function with the resolved path, `uid`, and `gid` as arguments.
+
+Based on the provided code snippet, it is difficult to determine if this function contains any vulnerabilities. The vulnerability of this function depends on how the `FsContext` object is created and used, as well as how the `path` argument is obtained and validated.
+
+To determine if this function contains vulnerabilities, we would need to analyze the code that creates and uses the `FsContext` object, as well as any code that interacts with the `path` argument. Additionally, we would need to consider any potential input validation or sanitization that is performed on the `uid` and `gid` arguments.
+
+Without further information, it is not possible to definitively determine if this function contains vulnerabilities or not.
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN
+1 || VUL
+1 || VUL
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || Based on the provided function, it is difficult to determine whether it contains vulnerabilities or not without additional context. The function appears to be related to starting a real-time clock (RTC) in a MenelausState structure. To accurately assess the presence of vulnerabilities, more information about the purpose and usage of this function is required.
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL (Vulnerability)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+
+Explanation: 
+
+The given function appears to be a test function that is used to verify the correctness of a visitor pattern implementation for handling numbers. It does not contain any obvious vulnerabilities such as buffer overflows, input validation issues, or insecure data handling. However, without further context or information about the surrounding code and how this function is used, it is difficult to make a definitive assessment.
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL (Vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || Based on the provided function, it does not contain any obvious vulnerabilities. The function appears to be closing a curl connection and freeing some allocated memory. However, without additional context or information about the purpose and usage of this function, it is difficult to determine if there are any potential vulnerabilities.
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || NAN (No vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN
+1 || NAN
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || This function does not contain any obvious vulnerabilities. It takes three parameters: a pointer to an int32_t variable, an int64_t variable, and an int32_t variable. It performs integer division between the num and den variables and assigns the result to the memory location pointed to by q_ptr. It then returns the remainder of the division operation.
+
+However, it is important to note that this function does not handle division by zero. If the den variable is zero, it will result in a division by zero error, which can lead to undefined behavior or program crashes. To make this function more robust, you should add a check to ensure that den is not zero before performing the division operation.
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+
+Explanation: The given function does not contain any obvious vulnerabilities. It appears to be a function that updates the mappings of a PCI bridge. It starts by making the updates atomic using a memory region transaction. Then, it cleans up the PCI bridge region and initializes it again. Finally, it commits the memory region transaction. This function does not seem to have any security vulnerabilities.
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || This function appears to be a memory-mapped I/O (MMIO) function for writing data to an IDE device. Based on the provided code, it does not contain any obvious vulnerabilities. However, without additional context or information about the surrounding code and the implementation of the "ide_ioport_write" and "ide_data_writew" functions, it is difficult to determine if there are any potential vulnerabilities.
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || VUL (Vulnerability)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+0 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL
+1 || NAN
+0 || Based on the provided function, it does not contain any obvious vulnerabilities. The function appears to be a simple inline function that converts a YUY2 image format to a Y format. It checks if the macro `HAVE_MMXFIXME` is defined, but since the implementation is missing, it falls back to a non-MMX implementation using a loop to copy every second byte from the source to the destination.
+
+However, without further context or information about the system and its requirements, it is difficult to determine if this function is vulnerable in a specific context. Vulnerabilities can arise from various factors such as input validation, memory management, or security-related operations. Therefore, a more comprehensive analysis is needed to determine if this function is vulnerable in a specific scenario.
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+
+Explanation: 
+
+The given function does not contain any obvious vulnerabilities. It appears to be a test function that calls two other functions, "do_test_validate_qmp_introspect" with different parameters. Without knowing the implementation of these functions, it is not possible to determine if there are any vulnerabilities present. However, based on the provided code snippet, there are no obvious security issues or vulnerabilities.
+0 || NAN (Does not contain vulnerabilities)
+0 || Based on the provided function, it does not contain any obvious vulnerabilities. It appears to be a simple function that assigns the result of a computation to the variable T0. However, without additional context or information about the cc_table and the compute_all() function, it is difficult to determine if there are any potential vulnerabilities present.
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL (Vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+
+Explanation: 
+The given function is a division operation function. It checks if the value of T1 is not equal to zero before performing the division operation. This is a good practice to avoid division by zero errors. If T1 is not zero, it performs the division and assigns the quotient to env->LO and the remainder to env->HI. Finally, it returns without any further operations.
+
+Based on the provided code, there are no obvious vulnerabilities present. However, it is important to note that the context in which this function is used and the values of T0 and T1 can affect the overall security of the system.
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || VUL
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+0 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || Based on the provided function, it is difficult to determine whether it contains vulnerabilities or not without additional context. The function appears to be setting global enables using the "set_global_enables" function. To determine if there are vulnerabilities, we would need to analyze the implementation of the "set_global_enables" function and any other related functions or dependencies.
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || This function appears to be a simple division operation. Based on the provided code snippet, it does not contain any obvious vulnerabilities. Therefore, the function can be classified as not containing vulnerabilities (NAN). However, it is important to note that this assessment is based solely on the provided code snippet and may not capture all potential vulnerabilities in the complete context of the application.
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || This function does not contain any obvious vulnerabilities. However, without further context or information about the functions `cpu_physical_memory_read` and `cpu_physical_memory_write`, it is difficult to determine if there are any potential vulnerabilities related to memory access or data manipulation.
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL
+1 || VUL
+1 || VUL
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL (Vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || NAN (Does not contain vulnerabilities)
+1 || VUL
+1 || VUL

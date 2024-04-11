@@ -1,0 +1,2050 @@
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK (Accepted)
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+Reasoning: The patch removes the `I2CR` and `I2CW` macros and expands them in place. The macros are only used in one place each and include the name of a local variable `devpriv` in their expansion. The patch also includes the necessary changes in the `I2Cread` function to use the expanded values. The patch has been reviewed and signed-off by multiple developers.
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+The patch replaces the use of pr_err with dev_err, which is the recommended function for printing error messages in the kernel. The patch has been reviewed and signed-off by multiple developers, indicating that it has been thoroughly reviewed and tested. Therefore, it should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+
+The patch moves the function CsrUInt16ToHex from csr_util.c to csr_wifi_hip_card_sdio_intr.c, as it is only called in that file. This change makes the function static, which improves code organization and reduces namespace pollution. The patch also updates the header file csr_util.h to remove the declaration of CsrUInt16ToHex, as it is no longer needed outside of csr_wifi_hip_card_sdio_intr.c.
+
+Overall, this patch improves code structure and does not introduce any new issues. Therefore, it should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+The patch removes redundant code from l2cap_core.c and moves the check for backlog size to l2cap_sock.c. It has been reviewed and Acked-by two developers. Therefore, it should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+The patch adds missing L2 cache events and DTLB refills for the arm64 architecture. It has been Acked-by Will Deacon and signed-off by Florian Fainelli and Catalin Marinas. Therefore, it should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+The patch is a simple change that replaces two function calls with a single function call. It does not introduce any new functionality or change the behavior of the code. Therefore, it is a safe and straightforward change that can be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK (Accepted)
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK (Accepted)
+false || ACK
+
+The patch removes a pointless cast in the code, which improves code readability and does not introduce any functional changes. Therefore, it is safe to accept this patch in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || The Linux kernel patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+Reasoning: The patch adds error handling for the nla_put_be32 function. If the function fails, it will jump to the nla_put_failure label, indicating a failure in adding the attribute to the skb. This is a necessary check to ensure that the attribute is properly added and the patch improves the robustness of the code. Therefore, it should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+The patch adds support for pause/resume functionality in cyclic DMA mode for the omap DMA engine. It also includes necessary checks to ensure that pause/resume is only allowed in cyclic mode. The patch has been reviewed and tested by multiple developers, and it has been signed-off by the relevant maintainers. Therefore, it should be accepted in Linux -stable releases.
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK (Accepted)
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK) because it adds entries in the HID table and references to the bytcht_da7213 driver, which improves the functionality and compatibility of the ASoC Intel Atom machine driver. Additionally, it has been Acked-by Vinod Koul and signed-off by Pierre-Louis Bossart and Mark Brown, indicating that it has been reviewed and approved by relevant developers.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+Explanation: The patch removes the assignment of the "owner" field in the platform_driver structure. According to the comment in the patch, a platform_driver does not need to set an owner as it will be populated by the driver core. Therefore, this patch is removing unnecessary code and can be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK (Accepted)
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK (Accepted)
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK) because it fixes a trivial typo in the code.
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK (Accepted)
+
+The patch adds error checking for the return values of the nla_parse() function in multiple places in the code. This ensures that the attributes are actually what is expected and prevents potential issues caused by incorrect attribute values. Therefore, the patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK (Accepted)
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+Reasoning: The patch adds missing clocks for different MIPS platforms. It is a small and straightforward change that fixes a potential issue. The patch has been reviewed and signed-off by the relevant maintainers. Therefore, it should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK (Accepted)
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK) because it fixes a bug where the boolean 'found' is not initialized and could contain garbage values. The patch initializes 'found' as false, ensuring that it has a valid initial value. Additionally, the patch has been reviewed and acknowledged by Milo Kim and signed-off by Colin Ian King and Sebastian Reichel.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+The patch adds the Acer Aspire 5741 to the video_vendor_dmi_table in the acer-wmi driver. This is necessary because the Aspire 5741 has broken acpi-video backlight control. The patch has been reviewed and signed-off by multiple developers. Therefore, it should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+This patch should be accepted in Linux -stable releases. It adds a posting read to keep the cached values in sync with the hardware, which is necessary for proper functioning. It has been reviewed and signed-off by multiple developers, indicating that it has been thoroughly tested and is ready for inclusion in the stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK (Accepted)
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK (Accepted)
+
+The patch is making the symbols `global_dev`, `dcp_dma_unmap`, `dcp_dma_map`, and `dcp_watchdog` static, which means they will only be accessible within the file they are defined in. Since these symbols are only referenced within the file `dcp.c`, making them static improves encapsulation and reduces the risk of symbol conflicts. Therefore, the patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK (Accept) the Linux kernel patch.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK (Accepted)
+
+The patch hardcodes the clock event rating for the CMT driver to 125. This ensures that all boards use the same rating. The patch also simplifies the code by removing unnecessary parameters and conditions. The changes are straightforward and do not introduce any new issues. Therefore, the patch should be accepted in Linux -stable releases.
+false || ACK
+
+Explanation: The patch removes an explicit memset() call and instead uses the __GFP_ZERO flag in the krealloc() function to allocate and zero out memory. This change improves code readability and reduces the chance of errors. Therefore, the patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK (Accepted)
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+The patch eliminates the send buffers in the GSI receive QP, which is no longer needed since the transmission of GSI MADs is now done with special transmission QPs. The patch has been reviewed and signed-off by relevant developers.
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+
+The patch is a refactoring of the sdhci_set_default_irqs() function, which is a separate and distinct functionality from the sdhci_init() function. The refactoring improves code readability and maintainability. Additionally, the patch has been tested and signed-off by multiple developers. Therefore, it should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || NAK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || The Linux kernel patch should be accepted in Linux -stable releases (ACK).
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+false || The patch should be accepted in Linux -stable releases.
+false || ACK
+false || ACK
+false || ACK
+false || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The Linux kernel patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+
+The patch fixes an issue with the current poison pointer values being too big for small mmap_min_addr setups. The proposed values are smaller and suggested by a trusted source. The patch also includes the necessary Signed-off-by tags.
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The Linux kernel patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The Linux kernel patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK (Accepted)
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || NAK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || The Linux kernel patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || NAK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || NAK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The Linux kernel patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK). It fixes a NULL-dereference issue and ensures that the number of endpoints is checked before accessing the endpoint array, preventing potential memory access errors.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The Linux kernel patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The Linux kernel patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+
+The patch fixes a bug in the _set_gpio_irqenable function by adding the capability to disable interrupts based on the enable parameter. It has been reviewed and approved by multiple developers, including Santosh Shilimkar, Felipe Balbi, and Kevin Hilman. Therefore, it should be accepted in Linux -stable releases.
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK (Accepted)
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK (Accepted)
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || NAK (Not Acknowledged)
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || The patch should be accepted in Linux -stable releases (ACK) because it fixes a bug that can cause errors while debugging.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+
+This patch adds locking to prevent concurrent access to the VMA prio list in the NOMMU code. It also includes the necessary locking and unlocking of the i_mmap_mutex in the relevant functions. The patch has been reviewed and Acked-by Al Viro, who is a well-known Linux kernel developer. Additionally, it has been marked for inclusion in stable releases by adding "cc: stable@vger.kernel.org" in the patch. Therefore, it is recommended to accept this patch in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || The Linux kernel patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK (Accept)
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK (Accepted)
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+
+The patch adds the necessary RCU lock in the dev_pm_opp_get_opp_count function, which ensures that the function is called under the correct locking context. The patch also includes appropriate error handling and unlocking. Additionally, the patch has been reviewed and Acked-by Viresh Kumar. Therefore, the patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || NAK (Not Accepted)
+
+Explanation: The patch is reverting a previous commit that restricted the VF from configuring any VLAN mode. The reason for reverting the commit is to allow the same multicast address to be used with any VLAN, which helps save multicast filters. However, the patch also removes code that checks if the MAC + any VLAN filter is allowed from the VF. This removal of code could potentially introduce a security vulnerability or unintended behavior. Therefore, the patch should not be accepted in Linux -stable releases.
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || NAK
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || The Linux kernel patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK. The patch addresses an issue in the DMA debug API and improves how it handles multiple mappings of a buffer. It has been reviewed and tested by multiple individuals, and it has been signed-off by several maintainers. Therefore, it should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK) because it fixes an off-by-one error in the OOB-port completion handler that was introduced by a recent change. This error could lead to modem-status changes going unnoticed and breaking TIOCMGET. The patch has been reported by Ben Hutchings and fixes a loop-condition underflow. It is also marked for stable. Therefore, it should be accepted to ensure the stability and functionality of the Linux kernel.
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The Linux kernel patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK (Accepted)
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK (Accept)
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK) because it fixes a null pointer access issue that can cause a crash in the brcmfmac driver.
+true || ACK
+true || ACK
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || NAK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK (Accepted)
+true || ACK
+true || The patch should be accepted in Linux -stable releases.
+true || ACK (Accepted)
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || The patch should be accepted in Linux -stable releases (ACK).
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK
+true || ACK

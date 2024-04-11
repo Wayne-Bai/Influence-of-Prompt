@@ -1,0 +1,1975 @@
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a NULL pointer access vulnerability in the kernel.
+security || This patch is a security patch (SRP) because it fixes a possible NULL pointer dereference vulnerability in the thermal driver.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it blocks the use of MSG_CMSG_COMPAT in send(m)msg and recv(m)msg functions. This prevents an oops when running certain code and improves the security of the system.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability that can cause an infinite loop and potential denial of service (DoS) attack.
+security || This patch is a security patch (SRP) because it fixes a NULL-dereference vulnerability in the USB idmouse driver, which could be exploited by a malicious device lacking endpoints.
+security || Non-security patch (NSP)
+security || This patch appears to be a non-security patch (NSP) as it fixes a memory leak issue in the code.
+security || This patch is a non-security patch (NSP). It adds a spinlock to protect against concurrent modifications of certain variables and the content of the superblock's buffer. It is a preparation patch for removing the BKL from ext2 in the next patch.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a NULL dereference bug that could potentially be exploited by an attacker to crash the system or execute arbitrary code.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a missing bounds check vulnerability in the do_PVK_body() function in OpenSSL.
+security || This patch is a security patch (SRP) because it fixes a vulnerability that can lead to file system corruption.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability that can cause memory allocation failures and trigger kernel warnings.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a memory leak issue in the wl12xx driver by freeing the skb when removing the interface.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a kernel crash that could potentially be exploited by an attacker.
+security || This patch is a security patch (SRP) because it fixes a race condition that can lead to a kernel BUG and an internal error.
+security || This patch is a non-security patch (NSP). It fixes a possible memory leak in the hfcmulti_init() function in the mISDN driver.
+security || This patch is a security patch (SRP) because it fixes a vulnerability that could lead to a stack overflow.
+security || This patch is a non-security patch (NSP). It fixes a bug related to setting the time and ensures that the value of tz_minuteswest is within a valid range.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it addresses a race condition vulnerability and prevents an attacker from opening an old file with incorrect permissions before the secret is written into it.
+security || This patch is a security patch (SRP) because it adds protection to the tracer flags to prevent corruption and potential security issues.
+security || This patch is a security patch (SRP) because it fixes a vulnerability where a negative chunk size could lead to memory accesses out of bounds.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch appears to be a security patch (SRP) because it fixes a memory allocation issue in the sslUpgrade function, which could potentially lead to security vulnerabilities.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability where the driver neglects to check the return value from kmalloc() and may end up dereferencing a null pointer. The patch adds a check for the return value of kmalloc() and returns an error if it is NULL.
+security || This patch is a non-security patch (NSP). It fixes a bug related to freeing a resource in the ath5k driver, but it does not address any security vulnerabilities.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it is fixing a security vulnerability related to the use of the "tmpnam()" function.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP). It fixes an overflow condition in the pool_find_page() function in the dmapool.c file. The patch addresses a specific issue related to the calculation of the end address of a DMA pool and does not involve any security vulnerabilities or threats.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch appears to be a non-security patch (NSP). It is fixing a bug reported by a user and does not seem to address any security vulnerabilities.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes an integer overflow vulnerability in the rndis_wlan driver, which could potentially be exploited by an attacker.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a memory leak that could potentially be exploited by an attacker.
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a NULL pointer dereference bug that could potentially be exploited by an attacker.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a potential vulnerability by checking for allocation failure and returning an error code if the allocation fails.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a compiler warning related to the frame size of a function in the ipw2200.c file. The patch does not address any security vulnerabilities or issues.
+security || This patch is a security patch (SRP) because it fixes a potential security problem by removing the line of code that could be used to touch an arbitrary file.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a NULL pointer dereference vulnerability in the drm/i915 driver.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability related to data lingering in the read buffer after being copied to the user.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a potential vulnerability where a pointer returned from the call to the function 'malloc' may be NULL and will be dereferenced later in the code. The patch adds a check to ensure that the pointer is not NULL before dereferencing it.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a memory leak issue in the mysql_real_connect() function, which could potentially be exploited by attackers.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch appears to be a security patch (SRP) because it fixes a double free vulnerability in the GPRS outbound packet error path.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It appears to be a bug fix or improvement to the handling of invalid length or empty data in the Aireplay-ng test. It does not address any specific security vulnerabilities.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It is fixing a bug related to clearing the address in the nf_conntrack_sip module, but it does not address any security vulnerabilities.
+security || This patch is a security patch (SRP) because it fixes a null dereference vulnerability in the ceph code, which could cause a crash if osds were flapping and a request on said osd was aborted.
+security || This patch is a security patch (SRP) because it fixes a buffer overflow vulnerability in the do_start() function.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a memory leak issue in the umount.c file, but it does not address any security vulnerabilities.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes an out of reference frame read vulnerability, which could potentially be exploited by an attacker.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a potential NULL pointer dereference vulnerability in the Bluetooth code.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It is fixing an issue related to the TSC frequency calculation in the target-i386 module.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It is a code change that improves the functionality of the orinoco driver by maintaining a lock until an entry is removed from a list.
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a bug related to the permissions used when creating a directory in an SFTP server.
+security || This patch is a security patch (SRP) because it fixes a deadlock in the audit_log_task_context() function, which is related to security and access control.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP). It is focused on improving pointer hygiene and preventing memory bugs, but it does not address any specific security vulnerabilities.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch appears to be a non-security patch (NSP) as it is fixing a bug related to memory leaks in the code.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a NULL dereference vulnerability, which can be exploited by attackers to crash the system or execute arbitrary code.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a memory leak that could be exploited by an attacker to spray the memory of the feh application or trigger an out of memory condition.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch does not appear to be a security patch. It seems to be a code change related to checking data size in the tiertexseq.c file of the ffmpeg library.
+security || This patch is a non-security patch (NSP). It fixes an issue related to failed dma pool allocation in the xhci driver.
+security || This patch is a security patch (SRP) because it fixes a vulnerability that can be exploited by an attacker to cause an out-of-bounds access.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes error handling in the mac80211_hwsim driver, which could lead to TCP stalls and lost packets.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a memory leak in the ASoC nuc900-ac97 driver.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a NULL dereference issue in the sd_create function of the sheepdog.c file.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It is a warning fix for an uninitialized variable in the code, which does not directly address any security vulnerabilities.
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP). It is making changes to the code related to the pixel format used in lossless jpeg encoding and decoding.
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a bug related to registering a secondary interface on a device.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a message leak vulnerability in the RDS protocol implementation.
+security || This patch is a non-security patch (NSP). It fixes a memory leak in the profile dialog of the gtk module.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a NULL pointer dereference vulnerability that could potentially lead to a system crash or compromise.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP). It is fixing a bug related to checking the return value from clk_prepare_enable() in the mxs-auart driver. It does not address any security vulnerabilities.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability that could be exploited by a malicious user.
+security || This patch is a security patch (SRP).
+security || This patch appears to be a non-security patch (NSP) as it is fixing a bug related to a crash caused by dereferencing NULL, rather than addressing a security vulnerability.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a potential NULL pointer dereference vulnerability in the isdn driver.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability related to freeing inode_cache objects when their nlink isn't zero.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a NULL pointer dereference vulnerability in the sctp module, which can lead to a kernel panic.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability in the code that could potentially lead to a security issue.
+security || This patch is a security patch (SRP) because it fixes a null pointer dereference vulnerability in the librados library.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP). It fixes an issue with integer overflow in the AV PLL round rate calculation in the clk-pllv3.c file. The patch does not address any security vulnerabilities or threats.
+security || This patch is a security patch (SRP) because it fixes a potential security vulnerability related to sleep-in-atomic by memory allocation with GFP_KERNEL in regmap_bulk_write().
+security || This patch is a security patch (SRP) because it fixes a vulnerability in the code that could cause a kernel oops due to insufficient bounds checking.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes an issue with the order of releasing resources in the ide_detach() function in the ide-cs.c file. The patch does not address any security vulnerabilities or threats.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a bug in the code related to zero terminating a line in the Curl_pp_readresp function. The bug caused a problem with test 864.
+security || This patch is a non-security patch (NSP). It fixes a minor memory leak in the RTSP muxer by freeing metadata in chained RTP muxers.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it adds a NULL check for the ibqp event handler before calling it to report QP events. This check ensures that the event handler is initialized and prevents potential security vulnerabilities.
+security || This patch is a security patch (SRP) because it fixes an issue that could lead to out of bounds writes, which can be exploited by attackers to gain unauthorized access or execute arbitrary code.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP). It fixes an issue related to undefined behavior in the code, but it does not address any security vulnerabilities or threats.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes sparse warnings related to different signedness in the code.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes an information leak vulnerability in the RTM_GETSTATS call.
+security || This patch is a security patch (SRP) because it fixes a read buffer overflow vulnerability.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a memory leak issue related to password length in the authentication process.
+security || This patch is a security patch (SRP) because it fixes a vulnerability that could lead to memory corruption.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a null pointer dereference vulnerability in the drivers/net/fs_enet module.
+security || Security patch (SRP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a vulnerability in the code that could potentially lead to reading past the end of an array, which can be exploited by an attacker.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a memory corruption issue that could potentially lead to crashes and bad things happening.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a potential memory leak and avoids the reuse of freed memory in the hw/9pfs/virtio-9p-proxy.c file.
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a memory leak issue in the mwifiex_update_curr_bss_params() function, which could potentially be exploited by an attacker to cause a denial of service or execute arbitrary code.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it adds a check to prevent rawmidi functions from being called in irq handlers when the streams are not opened, which could result in system crashes or vulnerabilities.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It addresses a problem with the bus rescan process in the s390/zcrypt driver and improves the handling of the ap_config_timer. It does not directly address any security vulnerabilities or threats.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a kmalloc error check, which is a potential security vulnerability.
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP). It appears to be a code change that fixes an off by one error in the "driver-avalon.c" file. It does not address any security vulnerabilities or introduce any security enhancements.
+security || This patch appears to be a security patch (SRP) because it fixes a vulnerability by checking for a specific condition (len <= 0) and returning an error code (EINVAL) to prevent further execution.
+security || This patch is a non-security patch (NSP). It fixes a code issue in the scsi-generic.c file by replacing the use of free() with qemu_free(). It does not address any security vulnerabilities or threats.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Based on the provided patch, it is a security patch (SRP). The patch adds sanity checks to the ssl modules to prevent the possibility of an out of range file descriptor being passed to the events. This is a security measure to ensure the proper handling of file descriptors and prevent potential vulnerabilities.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch appears to be a non-security patch (NSP) as it is fixing a symlink problem for the "--private-bin" option in the firejail software.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability that could lead to an OOPS (crash) if illegal commands are dumped in S2API.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a memory leak and frees sgids in an error case.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a potential out of buffer write vulnerability.
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a bug that can result in some stripes not being freed when an array is stopped, leading to potential confusion and security issues.
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a vulnerability that could lead to an out of bounds read.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Security patch (SRP)
+security || This patch is a security patch (SRP) because it fixes a NULL pointer dereference vulnerability in the power_supply driver.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes memory leaks when skb_to_sgvec fails in the macsec module of the Linux kernel.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a bug that could lead to a read buffer overflow, which is a security vulnerability.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes an off-by-one error in the comparison of key lengths, which could potentially lead to security vulnerabilities.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a potential issue with reading stale or freed data from the DEV_INFO ioctl, but it does not address any specific security vulnerability.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It adds a sanity checking memcpy function which checks for overflows, but it does not address any security vulnerabilities or fix any security issues.
+security || This patch is a security patch (SRP) because it fixes a NULL pointer dereference vulnerability in the netlink_sendmsg() function, which could be exploited by an attacker to gain unauthorized access or cause a denial of service.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a buffer overflow vulnerability in the libadm.so.1`pkginfofind function.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It is fixing a bug related to clearing the address in the nf_conntrack_sip module, but it does not address any security vulnerabilities.
+security || This patch is a security patch (SRP) because it fixes a vulnerability related to accessing a zeroed location in the code, which could lead to accessing NULL or hardware-owned memory.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a bug that could lead to a crash in the IP stack due to a bogus IPCB area from a bridged packet being interpreted as IP options.
+security || This patch is a security patch (SRP) because it fixes a bug that can lead to a kernel NULL pointer dereference, which can be exploited by attackers to gain unauthorized access or cause a denial of service.
+security || This patch does not appear to be a security patch. It seems to be a code change related to the uclient functionality.
+security || This patch is a security patch (SRP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes an issue related to marking space dirty in the JFFS2 file system, but it does not address any security vulnerabilities.
+security || This patch is a non-security patch (NSP). It adds a spinlock around mailbox accesses to prevent simultaneous access, which is a performance improvement rather than a security enhancement.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a bug related to the USB driver and does not address any security vulnerabilities.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP). It fixes a potential overflow issue in the flvdec module of the libavformat library. By checking for overflow before allocating arrays, it prevents a multiplication from overflowing. This fix helps to ensure the stability and security of the software.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a bug in the MLS compatibility code that could potentially lead to security vulnerabilities by rejecting contexts with a MLS suffix.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a bug related to a null pointer dereference in the b43 wireless driver, which can cause an Oops (kernel panic) when a SDIO card is ejected during IO.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a vulnerability (CVE-2015-6815) that could lead to an infinite loop in processing transmit descriptors.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a bug that could potentially lead to a crash and could be exploited by an attacker.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a memory leak issue in the x509crl module of OpenSSL, but it does not address any security vulnerabilities or threats.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a null pointer dereference vulnerability in the pinctrl driver.
+security || This patch is a non-security patch (NSP). It fixes a memory leak in the code but does not address any security vulnerabilities.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a vulnerability that can lead to memory leaks and unexpected behavior, which can potentially be exploited by attackers.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a vulnerability related to checking the return value of the parse_object function.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it adds validity checks to prevent potential security vulnerabilities in the SELinux policy load process.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It is fixing a coding issue by replacing the use of "0" with "NULL" for pointers.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it adds a check for a privileged SCLP handler and generates an exception when it is called from the problem state.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP). It is fixing a bug related to removing data from a queue, but it does not address any security vulnerabilities.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It is a code change that handles a specific case when the data length is zero in the UBI (Unsorted Block Images) driver. It does not address any security vulnerabilities or issues.
+security || This patch is a security patch (SRP) because it adds a NULL check for the ibqp event handler before calling it to report QP events. This check ensures that the event handler is initialized and prevents potential security vulnerabilities.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Security Patch (SRP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes an issue with an uninitialized device pointer in the hsi: nokia-modem driver.
+security || This patch is a non-security patch (NSP). It fixes a buffer overflow issue and improves the coding style of the code.
+security || This patch is a security patch (SRP) because it adds a check to ensure that the prefix and message are not NULL before adding a message to the raw buffer. This check helps prevent potential vulnerabilities or crashes that could occur if NULL values were allowed.
+security || This patch is a security patch (SRP) because it fixes a memory leak issue in the xmlNanoFTPConnect() function, which could potentially be exploited by an attacker to cause a denial of service or execute arbitrary code.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a null pointer dereference bug that can be exploited by attackers.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes an overflow check in the xenbus_file_write() function, which could potentially lead to security vulnerabilities.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes an out-of-bounds read vulnerability in the KEYS subsystem of the Linux kernel.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a bug related to memory allocation and does not address any security vulnerabilities.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes an information leak vulnerability in the netfilter module.
+security || This patch is a security patch (SRP) because it fixes a potential read beyond the end of a buffer, which could lead to security vulnerabilities.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It is not addressing any security vulnerabilities or fixing any security-related issues.
+security || This patch is a security patch (SRP) because it fixes an information leak vulnerability in the ipvs module.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes an out of bound read vulnerability in the QDM2 decoder.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a memory leak in the edma_prep_dma_cyclic() function in the dma: edma driver.
+security || This patch is a security patch (SRP) because it fixes a vulnerability related to page migration that could lead to oopses and potential security issues.
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP). It is a code change that adds a sanity check and a workaround in the driver to avoid an infinite busy loop. It does not address any security vulnerabilities or fix any security issues.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a potential security vulnerability by initializing the mmc_command structure to zero in the mmc_send_if_cond function.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a possible memory leak with SSL certificate fingerprints, which is a security vulnerability.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a race condition issue in the btrfs file system, but it does not address any security vulnerabilities.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a potential null dereference vulnerability in the pm8001_dev_gone_notify() function.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability that can lead to kernel stack corruption, which can be exploited by attackers.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a buffer overflow vulnerability in the hfsplus file system.
+security || This patch is a non-security patch (NSP). It fixes a memory leak issue introduced during refactoring.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a security vulnerability related to lzo decompression.
+security || This patch is a security patch (SRP) because it adds a NULL check to all PM ops in hda_intel.c, which helps prevent potential security vulnerabilities.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability in the secure monitor driver by checking the size of the output buffer.
+security || This patch appears to be a non-security patch (NSP) as it is fixing a seg fault with exitredirect, which is not directly related to security vulnerabilities.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a potential buffer overflow vulnerability in the relay_http.c file.
+security || This patch is a security patch (SRP) because it fixes a crash that could potentially lead to a general protection fault.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability related to memory management and potential dereferencing of a bad pointer.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability related to checking for NULL before using data in the trusted-keys module.
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP).
+security || This patch is a security patch (SRP) because it fixes a vulnerability related to Bluetooth key authentication.
+security || This patch is a non-security patch (NSP). It is fixing a bug related to checking for date overflow in the code.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes an integer overflow vulnerability in the gntalloc_ioctl_alloc() function, which could lead to memory corruption.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a memory leak issue in the code.
+security || This patch is a non-security patch (NSP). It introduces a missing kfree statement in the error handling code following a kmalloc.
+security || This patch is a security patch (SRP) because it fixes a possible Denial of Service vulnerability (CVE-2012-5640) caused by a specially crafted .htpasswd file.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a NULL pointer dereference vulnerability that could be exploited by an attacker.
+security || Security patch (SRP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a vulnerability related to memory allocation and checking in the multicast feature of the IPv4 and IPv6 protocols.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes an issue related to reading one byte too much from bitstrings, but it does not address any security vulnerabilities.
+security || Non-security patch (NSP)
+security || This patch does not appear to be a security patch. It seems to be a work in progress (WIP) and does not address any specific security vulnerabilities or issues.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a bug related to myisam index corruption and a pointless cast in safemalloc, but it does not address any security vulnerabilities.
+security || This patch is a security patch (SRP) because it fixes a potential livelock issue in the hugetlb module, which could potentially be exploited by an attacker to cause a denial of service or other security vulnerabilities.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP). It is fixing warnings related to string truncation in the code, but it does not address any security vulnerabilities or threats.
+security || This patch is a security patch (SRP) because it fixes a potential security vulnerability by checking if the bssid is not NULL before executing certain code.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a double free vulnerability in the tun driver that can be exploited to cause a denial of service or potentially execute arbitrary code.
+security || This patch is a security patch (SRP) because it fixes an issue related to out-of-bounds reads in the netfilter x_tables module, which can lead to security vulnerabilities.
+security || This patch does not appear to be a security patch. It seems to be a fix for a specific issue related to the crypto_cps2.c file.
+security || This patch is a security patch (SRP) because it fixes an information leak in the marshalling code, which could lead to the leaking of contents of kernel stack memory to userspace.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP).
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a possible NULL pointer dereference vulnerability in the nfnetlink_log module.
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a potential buffer overflow in the lpfc_nvme_info_show() function.
+security || This patch is a security patch (SRP) because it fixes a potential racing issue during tfm allocation in the evm_crypto.c file, which is related to security and integrity.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it checks the return value of the realloc function and returns NULL if it fails. This is important for preventing potential memory allocation errors and vulnerabilities.
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a fault in the IPv6 route code that could cause a general protection fault and potential security vulnerability.
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP). It is fixing a bug related to the ext3 and ext4 file systems, specifically addressing a race condition between linking and unlinking files. The patch ensures that if the link count of an inode is 0, it returns -ENOENT to prevent potential corruption of the orphan inode list. While this patch improves the stability and integrity of the file systems, it does not directly address any security vulnerabilities.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a null pointer dereference vulnerability in the _gdScaleVert function.
+security || This patch is a security patch (SRP) because it fixes a vulnerability that could potentially leak kernel stack memory to userland.
+security || This patch is a security patch (SRP) because it fixes a vulnerability that could allow an attacker to access invalid memory.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a bug related to stale data in the AFU RRQ after an adapter reset. The patch clears the AFU RRQ in host memory after each reset to prevent processing stale entries and looping due to an out of sync generation bit.
+security || This patch appears to be a security patch (SRP) because it fixes potential buffer overflows when configured with --enable-opensslextra.
+security || This patch is a non-security patch (NSP). It is fixing a bug related to checking the input value for activity period in the iio: accel: mma9553 driver. It adds a boundary check to ensure that only allowed values are reported as successfully written to the device.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a bug that could lead to a stack guard page being hit and a kernel stack overflow.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes an out of bound read vulnerability in the vmd_decode() function of the vmd video decoder.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a vulnerability where an uninitialized int could be passed to the enable() function if the input value was invalid.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a possible buffer overflow vulnerability in the udev_util_encode_string() function.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a buffer overflow problem in the code, which can be exploited by attackers to gain unauthorized access or execute arbitrary code.
+security || This patch is a non-security patch (NSP). It fixes a bug related to the tridentfb driver and does not address any security vulnerabilities.
+security || This patch is a security patch (SRP) because it fixes an integer overflow vulnerability that could potentially lead to further security issues.
+security || This patch is a non-security patch (NSP). It fixes a micro-leak issue in the code but does not address any security vulnerabilities.
+security || This patch is a security patch (SRP) because it fixes an information leak to userland, which can potentially expose sensitive data from the kernel stack memory.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a memory leak issue in the code but does not address any security vulnerabilities.
+security || Security patch (SRP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch appears to be a non-security patch (NSP) as it fixes a crash issue related to passing NULL to a specific function in the code.
+security || This patch is a non-security patch (NSP).
+security || This patch appears to be a security patch (SRP) because it fixes a null pointer dereference issue in the client code, which can be a security vulnerability.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a possible buffer overflow vulnerability that can lead to a server crash.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it adds mutex protection for the interface list, which could cause issues if not protected.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a buffer overflow vulnerability in the `readline` function.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP). It fixes a memory leakage issue in the omap_gem_dmabuf.c file.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a buffer overflow vulnerability in the functions acl_get() and check_grant_db() in sql_acl.cc.
+security || This patch is a non-security patch (NSP). It is a code improvement that fixes a bug related to the behavior of the btrfs readdir() function. It does not address any security vulnerabilities.
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a potential integer overflow vulnerability that could result in a cross-domain attack.
+security || This patch is a non-security patch (NSP). It fixes a bug related to memory management in the nb8800_receive() function of the net driver. The bug causes a memory leak when the function fails to allocate a fragment. The patch addresses this issue by freeing the SKB (socket buffer) before returning.
+security || This patch is a security patch (SRP) because it fixes a vulnerability related to reading uninitialised data beyond the actual reply in the authd/providers/ident.c file.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a potential deadlock issue in the NFSv4 state manager, which could be exploited by an attacker to cause a denial of service or escalate privileges.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes overflows in subband coordinate computation that cause later buffer overflow.
+security || This patch is a security patch (SRP) because it fixes a vulnerability that can lead to overwriting kernel memory.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a potential buffer overflow vulnerability.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes possible memory leaks when sending phase 1 IDs, which can be a security vulnerability.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it adds missing NULL checks, which can help prevent potential security vulnerabilities.
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP). It fixes a potential memory leak in the kernel/relay.c file.
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || This patch is a non-security patch (NSP).
+security || This patch is a security patch (SRP) because it fixes a potential crash that could occur due to accessing functions in the Data Link protocol layer after it has been closed.
+security || This patch is a security patch (SRP) because it fixes a memory leak in the subject alternative name code, which can be a potential security vulnerability.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it fixes a memory leak in the SCTP protocol that can be exploited by passing an invalid user space pointer.
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a non-security patch (NSP).
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || This patch is a security patch (SRP) because it adds validation to the incoming_posn value in order to avoid out-of-bounds array accesses, which could potentially be exploited by an attacker.
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP). It fixes a compiler warning on Solaris related to a type mismatch in a function pointer assignment. It does not address any security vulnerabilities or issues.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a code change that fixes a bug related to debugging messages in the virt-df program. It does not address any security vulnerabilities or introduce any security enhancements.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP). It fixes a bug related to the handling of the CS5 setting on the PL2303 USB-to-serial devices. It does not address any security vulnerabilities or threats.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is fixing a bug related to handling failure to send a new NoA (Notice of Absence) in the ath9k driver.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a code cleanup and does not involve any security-related changes or fixes.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It fixes an issue related to updating the local name in the Bluetooth module, but it does not address any security vulnerabilities.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability related to the use of rcu_dereference() without proper protection.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP). It adds checks to see if malloc failed when allocating memory for certain members, but it does not address any security vulnerabilities or fixes any security issues.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a fix for a specific issue related to managing the journal block descriptor (jbd) slab in the Linux kernel. The patch corrects a mistake in converting a kfree() function call to kmem_cache_free(). It does not address any security vulnerabilities or threats.
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch appears to be a security patch (SRP) because it fixes a vulnerability related to the iscsi module, specifically addressing a redirection issue with Equallogic systems.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP). It fixes a specific issue with the rt2500usb driver related to the support of keys with different ciphers. It falls back to software encryption to fix the issue.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It appears to fix a typo in the code by modifying the "strcpy" function to "strcat" function. It does not address any security vulnerabilities or issues.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability in the code that could lead to bad memory accesses if userspace does not deliver a relocation table when accessing address registers.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a bug that can lead to a sleeping function being called from an invalid context, which can potentially be exploited by an attacker.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It removes an unneeded function and does not address any security vulnerabilities or issues.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is not related to fixing any security vulnerabilities or addressing any security issues. It is a performance improvement patch that adds cpu_relax() calls in css_tryget() and cgroup_clear_css_refs() functions to reduce cross-cache traffic.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a code change that modifies the way the version number of the firmware is printed in the iwlwifi driver.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability related to the enable_kernel_altivec() function in the powerpc/crypto/crc32c-vpmsum module.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It fixes a naming issue in the ASoC driver for the TLV320AIC3X codec, changing "MONOLOUT" to "MONO_LOUT". This change does not address any security vulnerabilities or threats.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It fixes an issue related to the CURLOPT_SSH_AUTH_TYPES option in the libcurl library, but it does not address any security vulnerabilities.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch appears to be a non-security patch (NSP) as it is fixing a bug related to the user-mode Linux (UML) kernel and improving performance, rather than addressing a security vulnerability.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability that can lead to a kernel panic and potential denial of service.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP). It fixes a bug related to arithmetics in the netfilter module, specifically regarding the NFT_REJECT_ICMPX_MAX constant. It does not address any security vulnerabilities or introduce any security enhancements.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch appears to be a non-security patch (NSP) as it does not address any security vulnerabilities or issues.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It fixes a bug related to the Solaris LDAP library returning the wrong file descriptor. While this bug could potentially cause issues with the functionality of the program, it does not directly address a security vulnerability.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a potential security vulnerability by preventing another DNS lookup if there is already one ongoing.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It fixes a sparse warning for HARD_TX_LOCK in the netdevice code.
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is fixing a bug related to interrupt masking during initialization of the irq-armada-370-xp irqchip driver. While this bug could potentially cause issues during the boot process, it does not directly address a security vulnerability.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is making changes to the code in order to drop excessive read/write access checks in the "exynos4210_combiner.c" file. These changes do not directly address any security vulnerabilities or issues.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a security vulnerability related to rejecting SMP security requests in the slave role.
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability related to user access in the Linux kernel.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it adds support for the MTIOCTOP command with the MTOFFL operation, which is used for ejecting a device.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It fixes a checkpatch warning about the use of 'unsigned' as a short form for 'unsigned int' in the batman-adv code.
+non-security || This patch is a non-security patch (NSP) because it does not address any security vulnerabilities or issues. It appears to be a code change related to breaking down settings into padded sections.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a code change related to the rpmsg driver, specifically making the modalias work for DeviceTree based devices. It does not address any security vulnerabilities or fixes.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a code change related to the scheduler in the Linux kernel, specifically accounting for SCHED_RR tasks. It does not address any security vulnerabilities or fixes.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a code change related to the isapnp driver, specifically removing the Big Kernel Lock (BKL) use from the isapnp_proc_bus_lseek() function.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it addresses a vulnerability related to validating the struct cn_msg len field, which comes from userspace and needs to be verified.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a code change related to the functionality of the tty subsystem in the Linux kernel. It removes a redundant call to wake_up_interruptible after the tty_wakeup function is called.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a missing address type check for removing Long Term Keys (LTKs) in the Bluetooth protocol. This check ensures that the address type (public vs random) matches when removing LTKs, which helps prevent unauthorized access to Bluetooth devices.
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It adds partno entries for fallback path in the tg3 driver, which is not related to security issues.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP). It fixes a build error and provides an empty definition for a function related to scheduling domains.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it disallows the use of PMU events intel_pt and intel_bts until there is support for them in the tools. This is done to prevent the recording of data without any indication as to why no data is being recorded.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a security patch (SRP) because it fixes a bug that can lead to follow up failures and potentially cause a "BUG: scheduling while atomic" error.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a bug that could potentially lead to a security vulnerability. Specifically, it addresses an issue where the interrupt is not disabled before calling the free_irq function, which can result in a time slot where the interrupt is enabled but the corresponding interrupt handler is removed. This can lead to unhandled interrupts and potential security issues.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP). It fixes an issue related to the error message returned when an invalid password is provided.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It fixes an issue related to the regulator resource for MMC2 on the 4430sdp board. It does not address any security vulnerabilities or threats.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It adds support for gapped clock in the si2168 driver, which is not directly related to security.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability in the KVM (Kernel-based Virtual Machine) subsystem. Specifically, it addresses a flaw where an invalid exception number could cause a warning message and potential system instability. The patch adds a check to ensure that the exception number is within a valid range, preventing the issue from occurring.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch appears to be a non-security patch (NSP) as it is fixing a logic issue in the libudev library related to device names.
+non-security || This patch is a non-security patch (NSP). It fixes a bug related to dirty page migration in the memcg subsystem of the Linux kernel. The patch improves performance and fixes issues with dirty page accounting in memcg, but it does not address any security vulnerabilities.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a security patch (SRP) because it restricts normal users from setting idle IO priority, which could potentially lead to security vulnerabilities or exploits.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch appears to be a non-security patch (NSP) as it is fixing a build issue and updating some variables in the code.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP). It is a code optimization that improves the efficiency of the mirroring code in the exofs file system. It does not address any security vulnerabilities or fix any security issues.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability related to tag creation in the repository. Specifically, it addresses the issue of the function returning a GIT_EEXISTS error code when a tag already exists, which could potentially be exploited by an attacker.
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability related to user string access functions.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability in the netfilter conntrack module that could potentially be exploited by an attacker.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It addresses an issue related to buffer sizes in the cxgb4 driver, but it does not address any security vulnerabilities or threats.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It fixes a bug in the default handler related to the handling of the POST method for regular files.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It fixes a bug related to the ACPI local APIC parser and does not address any security vulnerabilities.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a potential security vulnerability related to the scheduling of real-time tasks in the Linux kernel.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch does not appear to be a security patch. It seems to be a patch related to indexing and logging changes in a mailbox.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it addresses a vulnerability related to the handling of the "filename" parameter in the Content-Disposition header.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a bugfix related to a 64-bit issue in the bgpd/bgp_community.c file.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability related to WRITE SAME requests with ANCHOR==1.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is fixing an issue related to error handling and file handling, but it does not address any security vulnerabilities or threats.
+non-security || This patch is a security patch (SRP) because it fixes a bug that could potentially lead to a security vulnerability.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It fixes an issue related to the dimensions of the video being encoded, ensuring that they are multiples of 4. This is not directly related to security vulnerabilities or threats.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it enables a workaround for a specific security vulnerability (Cavium erratum 27456) on the ThunderX-81xx SoC.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability related to the handling of multipath routes in IPv6.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It fixes a build warning related to casting from pointer to integer of different size.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a code refactoring patch that moves the declaration of a struct from one file to another for organizational purposes. It does not address any security vulnerabilities or fix any security issues.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it modifies the permissions of the "priv_sess" file to make it writeable only by root.
+non-security || This patch is a security patch (SRP) because it adds a check for the "allow-interactive-authorization" flag when doing polkit. This flag is used for interactive authorization, which is a security feature.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It removes a per-zone hashtable of bitlock waitqueues in the mm (memory management) subsystem of the Linux kernel. The patch aims to fix a scalability issue with page waitqueues on some NUMA machines and to simplify the bitlock waitqueues.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a code change that adds information about the color depth for displays with "DFP 1.x compliant TMDS" according to the EDID specification. It does not address any security vulnerabilities or fixes.
+non-security || Non-security patch (NSP)
+non-security || This patch appears to be a non-security patch (NSP) as it is fixing an issue related to interpreting released names properly in the core unit of the software. It does not address any security vulnerabilities or threats.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It corrects a wrong looking stream_id validity check in avidec, which is a functionality improvement rather than a security fix.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability related to the parsing of certain bytes in the ALSA seq_midi_event module.
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a code change to fix compile warnings about uninitialized variables in the Trident driver.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a security patch (SRP) because it fixes a vulnerability in the code that could lead to a kernel bad access.
+non-security || This patch is a non-security patch (NSP). It is modifying the behavior of the arm64 kernel by removing the IORESOURCE_BUSY flag from requests for reserved memory regions. This change does not directly address any security vulnerabilities or threats.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It deprecates a feature and gives a warning message to the user if it is attempted.
+non-security || This patch is a non-security patch (NSP). It provides an error message when migration fails due to a mismatch in htab_shift values, but it does not address any security vulnerabilities or fixes.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP) because it is fixing a dynamic linking issue and not addressing a security vulnerability.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP). It is a code improvement that adds a sanity check to ensure that requested channel sizes are within bounds, reducing errors in driver implementation.
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch does not appear to be a security patch. It seems to be a code change related to fetching externally stored fields when using InnoDB's internal SQL parser.
+non-security || This patch is a security patch (SRP) because it fixes a bug that can cause a kernel oops and potentially compromise the security of the system.
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || Non-security patch (NSP)
+non-security || This patch is a non-security patch (NSP).
+non-security || Non-security patch (NSP)
